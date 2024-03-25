@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct UserStatView: View {
+    
+    let Weight:Double
+    let Exercise:String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let roundWeight = String(format: "%.1f", Weight)
+        
+        VStack{
+            Text("\(roundWeight)")
+                .font(.subheadline)
+                
+            
+            Text(Exercise)
+                .font(.footnote)
+            
+        }
+        .frame(width: 72)
     }
 }
 
 #Preview {
-    UserStatView()
+    UserStatView(Weight: 140, Exercise: "Squat")
 }

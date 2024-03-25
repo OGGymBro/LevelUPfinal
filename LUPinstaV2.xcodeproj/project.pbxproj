@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */; };
 		AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */; };
-		AF8C6C502BB12D5D00C47306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C4F2BB12D5D00C47306 /* Assets.xcassets */; };
 		AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */; };
-		AF8C6C672BB12F1A00C47306 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C662BB12F1A00C47306 /* AuthenticationView.swift */; };
+		AF8C6C672BB12F1A00C47306 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C662BB12F1A00C47306 /* LoginView.swift */; };
 		AF8C6C692BB12F2800C47306 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C682BB12F2800C47306 /* AddEmailView.swift */; };
 		AF8C6C6B2BB12F3700C47306 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C6A2BB12F3700C47306 /* CreateUsernameView.swift */; };
 		AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */; };
@@ -35,15 +34,18 @@
 		AF8C6C932BB1336F00C47306 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C922BB1336F00C47306 /* FirebaseFirestore */; };
 		AF8C6C952BB1336F00C47306 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C942BB1336F00C47306 /* FirebaseFirestoreSwift */; };
 		AF8C6C972BB1336F00C47306 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C962BB1336F00C47306 /* FirebaseStorage */; };
+		AFCBE7832BB13B7E00072EA3 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCBE7822BB13B7E00072EA3 /* ContentViewModel.swift */; };
+		AFCBE7852BB13BC900072EA3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCBE7842BB13BC900072EA3 /* AuthService.swift */; };
+		AFCBE7872BB13C4C00072EA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */; };
+		AFF37B0F2BB143C200D679D5 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF37B0E2BB143C200D679D5 /* assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF8C6C482BB12D5C00C47306 /* LUPinstaV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUPinstaV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUPinstaV2App.swift; sourceTree = "<group>"; };
 		AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AF8C6C4F2BB12D5D00C47306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AF8C6C662BB12F1A00C47306 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		AF8C6C662BB12F1A00C47306 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AF8C6C682BB12F2800C47306 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		AF8C6C6A2BB12F3700C47306 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,10 @@
 		AF8C6C892BB130CA00C47306 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF8C6C8B2BB130E000C47306 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSession.swift; sourceTree = "<group>"; };
+		AFCBE7822BB13B7E00072EA3 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		AFCBE7842BB13BC900072EA3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFF37B0E2BB143C200D679D5 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,9 @@
 				AF8C6C5C2BB12E1F00C47306 /* Model */,
 				AF8C6C5B2BB12E1900C47306 /* Services */,
 				AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */,
-				AF8C6C4F2BB12D5D00C47306 /* Assets.xcassets */,
+				AFCBE7822BB13B7E00072EA3 /* ContentViewModel.swift */,
+				AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */,
+				AFF37B0E2BB143C200D679D5 /* assets.xcassets */,
 				AF8C6C512BB12D5D00C47306 /* Preview Content */,
 			);
 			path = LUPinstaV2;
@@ -145,6 +153,7 @@
 		AF8C6C5B2BB12E1900C47306 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AFCBE7842BB13BC900072EA3 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -169,7 +178,7 @@
 		AF8C6C5E2BB12E6F00C47306 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				AF8C6C662BB12F1A00C47306 /* AuthenticationView.swift */,
+				AF8C6C662BB12F1A00C47306 /* LoginView.swift */,
 				AF8C6C682BB12F2800C47306 /* AddEmailView.swift */,
 				AF8C6C6A2BB12F3700C47306 /* CreateUsernameView.swift */,
 				AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */,
@@ -307,7 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */,
-				AF8C6C502BB12D5D00C47306 /* Assets.xcassets in Resources */,
+				AFCBE7872BB13C4C00072EA3 /* GoogleService-Info.plist in Resources */,
+				AFF37B0F2BB143C200D679D5 /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +340,10 @@
 				AF8C6C862BB130A400C47306 /* UploadPostView.swift in Sources */,
 				AF8C6C8E2BB130F000C47306 /* ExerciseSession.swift in Sources */,
 				AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */,
+				AFCBE7832BB13B7E00072EA3 /* ContentViewModel.swift in Sources */,
 				AF8C6C7A2BB12FC500C47306 /* FeedCell.swift in Sources */,
 				AF8C6C8C2BB130E000C47306 /* Post.swift in Sources */,
+				AFCBE7852BB13BC900072EA3 /* AuthService.swift in Sources */,
 				AF8C6C842BB1309000C47306 /* MainTabView.swift in Sources */,
 				AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */,
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
@@ -339,7 +351,7 @@
 				AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */,
 				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
 				AF8C6C762BB12FAB00C47306 /* PostGridView.swift in Sources */,
-				AF8C6C672BB12F1A00C47306 /* AuthenticationView.swift in Sources */,
+				AF8C6C672BB12F1A00C47306 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

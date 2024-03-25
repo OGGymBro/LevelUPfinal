@@ -8,11 +8,41 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    let user: User
+    
+    private let gridItems: [GridItem] = [
+        .init(.flexible(), spacing: 1),
+        .init(.flexible(), spacing: 1),
+        .init(.flexible(), spacing: 1)
+    ]
+    
+     var posts:[Post] {
+        return Post.MOCK_POSTS.filter({$0.user?.username == user.username})
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    //    NavigationStack {
+            ScrollView{
+                
+                //header
+                ProfileHeaderView(user: user)
+                
+                
+                
+                //Post grid view
+               PostGridView(posts: posts)
+            }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            
+
+       // }
+        
+        
     }
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: User.MOCK_USERS[0])
 }

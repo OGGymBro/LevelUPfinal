@@ -8,11 +8,42 @@
 import SwiftUI
 
 struct CurrentUserProfileView: View {
+    
+    let user: User
+
+    var posts:[Post] {
+       return Post.MOCK_POSTS.filter({$0.user?.username == user.username})
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ScrollView{
+                
+                //header
+                ProfileHeaderView(user: user)
+                
+                
+                
+                //Post grid view
+                PostGridView(posts: posts)
+            }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        // Action to perform when the button is tapped
+                         
+                    }) {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(.green)
+                    }
+                }
+        }
+        }
     }
 }
 
 #Preview {
-    CurrentUserProfileView()
+    CurrentUserProfileView(user: User.MOCK_USERS[0])
 }
