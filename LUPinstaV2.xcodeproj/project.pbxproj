@@ -43,6 +43,8 @@
 		AFF37B192BB1A19D00D679D5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B182BB1A19D00D679D5 /* LoginViewModel.swift */; };
 		AFF37B1B2BB1B2C800D679D5 /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B1A2BB1B2C800D679D5 /* ForumPost.swift */; };
 		AFF37B1D2BB1B2E100D679D5 /* ExerciseVideoPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B1C2BB1B2E100D679D5 /* ExerciseVideoPost.swift */; };
+		AFF37B202BB1C14200D679D5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B1F2BB1C14200D679D5 /* UserService.swift */; };
+		AFF37B242BB1C29500D679D5 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B232BB1C29500D679D5 /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		AFF37B182BB1A19D00D679D5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AFF37B1A2BB1B2C800D679D5 /* ForumPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
 		AFF37B1C2BB1B2E100D679D5 /* ExerciseVideoPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVideoPost.swift; sourceTree = "<group>"; };
+		AFF37B1F2BB1C14200D679D5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		AFF37B232BB1C29500D679D5 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 				AF8C6C5A2BB12DE800C47306 /* Core */,
 				AF8C6C5D2BB12E2900C47306 /* Extentions */,
 				AF8C6C5C2BB12E1F00C47306 /* Model */,
+				AFF37B1E2BB1C11B00D679D5 /* Services */,
 				AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */,
 				AFF37B0E2BB143C200D679D5 /* assets.xcassets */,
 				AF8C6C512BB12D5D00C47306 /* Preview Content */,
@@ -214,7 +219,8 @@
 		AF8C6C612BB12E9400C47306 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				AF8C6C812BB1301600C47306 /* SearchView.swift */,
+				AFF37B212BB1C26900D679D5 /* View */,
+				AFF37B222BB1C27000D679D5 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -291,6 +297,30 @@
 			children = (
 				AFF37B142BB153C900D679D5 /* RegistrationViewModel.swift */,
 				AFF37B182BB1A19D00D679D5 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AFF37B1E2BB1C11B00D679D5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AFF37B1F2BB1C14200D679D5 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AFF37B212BB1C26900D679D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C812BB1301600C47306 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFF37B222BB1C27000D679D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFF37B232BB1C29500D679D5 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -399,8 +429,10 @@
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
 				AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */,
+				AFF37B242BB1C29500D679D5 /* SearchViewModel.swift in Sources */,
 				AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */,
 				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
+				AFF37B202BB1C14200D679D5 /* UserService.swift in Sources */,
 				AFF37B1B2BB1B2C800D679D5 /* ForumPost.swift in Sources */,
 				AF8C6C762BB12FAB00C47306 /* PostGridView.swift in Sources */,
 				AF8C6C672BB12F1A00C47306 /* LoginView.swift in Sources */,
