@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF383AEC2BB1E9FD00EB7833 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF383AEB2BB1E9FD00EB7833 /* Lottie */; };
+		AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */; };
+		AF383AF02BB1EB4900EB7833 /* gym11.json in Resources */ = {isa = PBXBuildFile; fileRef = AF383AEF2BB1EB4800EB7833 /* gym11.json */; };
 		AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */; };
 		AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */; };
 		AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */; };
@@ -48,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoader.swift; sourceTree = "<group>"; };
+		AF383AEF2BB1EB4800EB7833 /* gym11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gym11.json; sourceTree = "<group>"; };
 		AF8C6C482BB12D5C00C47306 /* LUPinstaV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUPinstaV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUPinstaV2App.swift; sourceTree = "<group>"; };
 		AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF383AEC2BB1E9FD00EB7833 /* Lottie in Frameworks */,
 				AF8C6C912BB1336F00C47306 /* FirebaseAuth in Frameworks */,
 				AF8C6C972BB1336F00C47306 /* FirebaseStorage in Frameworks */,
 				AF8C6C932BB1336F00C47306 /* FirebaseFirestore in Frameworks */,
@@ -125,6 +131,7 @@
 				AF8C6C5C2BB12E1F00C47306 /* Model */,
 				AFF37B1E2BB1C11B00D679D5 /* Services */,
 				AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */,
+				AF383AEF2BB1EB4800EB7833 /* gym11.json */,
 				AFF37B0E2BB143C200D679D5 /* assets.xcassets */,
 				AF8C6C512BB12D5D00C47306 /* Preview Content */,
 			);
@@ -305,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF37B1F2BB1C14200D679D5 /* UserService.swift */,
+				AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 				AF8C6C922BB1336F00C47306 /* FirebaseFirestore */,
 				AF8C6C942BB1336F00C47306 /* FirebaseFirestoreSwift */,
 				AF8C6C962BB1336F00C47306 /* FirebaseStorage */,
+				AF383AEB2BB1E9FD00EB7833 /* Lottie */,
 			);
 			productName = LUPinstaV2;
 			productReference = AF8C6C482BB12D5C00C47306 /* LUPinstaV2.app */;
@@ -377,6 +386,7 @@
 			mainGroup = AF8C6C3F2BB12D5C00C47306;
 			packageReferences = (
 				AF8C6C8F2BB1336F00C47306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AF383AEA2BB1E9FD00EB7833 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = AF8C6C492BB12D5C00C47306 /* Products */;
 			projectDirPath = "";
@@ -393,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */,
+				AF383AF02BB1EB4900EB7833 /* gym11.json in Resources */,
 				AFCBE7872BB13C4C00072EA3 /* GoogleService-Info.plist in Resources */,
 				AFF37B0F2BB143C200D679D5 /* assets.xcassets in Resources */,
 			);
@@ -426,6 +437,7 @@
 				AFCBE7852BB13BC900072EA3 /* AuthService.swift in Sources */,
 				AF8C6C842BB1309000C47306 /* MainTabView.swift in Sources */,
 				AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */,
+				AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */,
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
 				AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */,
@@ -643,6 +655,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AF383AEA2BB1E9FD00EB7833 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
 		AF8C6C8F2BB1336F00C47306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -654,6 +674,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AF383AEB2BB1E9FD00EB7833 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF383AEA2BB1E9FD00EB7833 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		AF8C6C902BB1336F00C47306 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AF8C6C8F2BB1336F00C47306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
