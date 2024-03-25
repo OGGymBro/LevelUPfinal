@@ -24,7 +24,7 @@ struct LottieLoader: View {
                 onAnimationDidFinish?()
             })
             .playbackMode(.playing(.toProgress(1, loopMode: playLoopMode)))
-            .animationSpeed(3.0)
+            .animationSpeed(4.0)
             .frame(width: 300, height: 300)
         
             
