@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CreatePasswordView: View {
-    @State private var password = ""
+   // @State private var password = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     var body: some View {
         VStack(spacing:12){
@@ -24,12 +25,12 @@ struct CreatePasswordView: View {
                 .multilineTextAlignment(.center)
                 .padding(.bottom,24)
             
-            SecureField("Enter your password", text: $password)
+            SecureField("Enter your password", text: $viewModel.password)
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .modifier(LUPTextFieldModifier())
             
             NavigationLink{
-                CompleteSignUpView()
+                RoleChoice()
                     .navigationBarBackButtonHidden(true)
             } label:{
                 Text("Next")
