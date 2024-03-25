@@ -33,6 +33,7 @@ struct CurrentUserProfileView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         // Action to perform when the button is tapped
+                        AuthService.shared.signout()
                          
                     }) {
                         Image(systemName: "line.3.horizontal")

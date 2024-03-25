@@ -40,6 +40,7 @@
 		AFF37B0F2BB143C200D679D5 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF37B0E2BB143C200D679D5 /* assets.xcassets */; };
 		AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B142BB153C900D679D5 /* RegistrationViewModel.swift */; };
 		AFF37B172BB1903400D679D5 /* RoleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B162BB1903400D679D5 /* RoleChoice.swift */; };
+		AFF37B192BB1A19D00D679D5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B182BB1A19D00D679D5 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		AFF37B0E2BB143C200D679D5 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		AFF37B142BB153C900D679D5 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AFF37B162BB1903400D679D5 /* RoleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleChoice.swift; sourceTree = "<group>"; };
+		AFF37B182BB1A19D00D679D5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF37B142BB153C900D679D5 /* RegistrationViewModel.swift */,
+				AFF37B182BB1A19D00D679D5 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				AF8C6C882BB130B100C47306 /* UploadPostViewModel.swift in Sources */,
 				AF8C6C6B2BB12F3700C47306 /* CreateUsernameView.swift in Sources */,
 				AF8C6C722BB12F7F00C47306 /* UserStatView.swift in Sources */,
+				AFF37B192BB1A19D00D679D5 /* LoginViewModel.swift in Sources */,
 				AF8C6C692BB12F2800C47306 /* AddEmailView.swift in Sources */,
 				AF8C6C8A2BB130CA00C47306 /* User.swift in Sources */,
 				AF8C6C862BB130A400C47306 /* UploadPostView.swift in Sources */,
