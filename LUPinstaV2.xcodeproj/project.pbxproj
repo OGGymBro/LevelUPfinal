@@ -11,6 +11,26 @@
 		AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */; };
 		AF8C6C502BB12D5D00C47306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C4F2BB12D5D00C47306 /* Assets.xcassets */; };
 		AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */; };
+		AF8C6C672BB12F1A00C47306 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C662BB12F1A00C47306 /* AuthenticationView.swift */; };
+		AF8C6C692BB12F2800C47306 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C682BB12F2800C47306 /* AddEmailView.swift */; };
+		AF8C6C6B2BB12F3700C47306 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C6A2BB12F3700C47306 /* CreateUsernameView.swift */; };
+		AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */; };
+		AF8C6C702BB12F6600C47306 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C6F2BB12F6600C47306 /* CompleteSignUpView.swift */; };
+		AF8C6C722BB12F7F00C47306 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C712BB12F7F00C47306 /* UserStatView.swift */; };
+		AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C732BB12F9700C47306 /* LUPTextFieldModifier.swift */; };
+		AF8C6C762BB12FAB00C47306 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C752BB12FAB00C47306 /* PostGridView.swift */; };
+		AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C772BB12FBE00C47306 /* FeedView.swift */; };
+		AF8C6C7A2BB12FC500C47306 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C792BB12FC500C47306 /* FeedCell.swift */; };
+		AF8C6C7C2BB12FD900C47306 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C7B2BB12FD900C47306 /* ProfileView.swift */; };
+		AF8C6C7E2BB12FE800C47306 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C7D2BB12FE800C47306 /* CurrentUserProfileView.swift */; };
+		AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C7F2BB12FFB00C47306 /* ProfileHeaderView.swift */; };
+		AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C812BB1301600C47306 /* SearchView.swift */; };
+		AF8C6C842BB1309000C47306 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C832BB1309000C47306 /* MainTabView.swift */; };
+		AF8C6C862BB130A400C47306 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C852BB130A400C47306 /* UploadPostView.swift */; };
+		AF8C6C882BB130B100C47306 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C872BB130B100C47306 /* UploadPostViewModel.swift */; };
+		AF8C6C8A2BB130CA00C47306 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C892BB130CA00C47306 /* User.swift */; };
+		AF8C6C8C2BB130E000C47306 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C8B2BB130E000C47306 /* Post.swift */; };
+		AF8C6C8E2BB130F000C47306 /* ExerciseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +39,26 @@
 		AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF8C6C4F2BB12D5D00C47306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF8C6C662BB12F1A00C47306 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		AF8C6C682BB12F2800C47306 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
+		AF8C6C6A2BB12F3700C47306 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
+		AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
+		AF8C6C6F2BB12F6600C47306 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
+		AF8C6C712BB12F7F00C47306 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		AF8C6C732BB12F9700C47306 /* LUPTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUPTextFieldModifier.swift; sourceTree = "<group>"; };
+		AF8C6C752BB12FAB00C47306 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		AF8C6C772BB12FBE00C47306 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		AF8C6C792BB12FC500C47306 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		AF8C6C7B2BB12FD900C47306 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AF8C6C7D2BB12FE800C47306 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		AF8C6C7F2BB12FFB00C47306 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		AF8C6C812BB1301600C47306 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AF8C6C832BB1309000C47306 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AF8C6C852BB130A400C47306 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		AF8C6C872BB130B100C47306 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		AF8C6C892BB130CA00C47306 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF8C6C8B2BB130E000C47306 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +91,11 @@
 		AF8C6C4A2BB12D5C00C47306 /* LUPinstaV2 */ = {
 			isa = PBXGroup;
 			children = (
-				AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */,
+				AF8C6C592BB12DE000C47306 /* App */,
+				AF8C6C5A2BB12DE800C47306 /* Core */,
+				AF8C6C5D2BB12E2900C47306 /* Extentions */,
+				AF8C6C5C2BB12E1F00C47306 /* Model */,
+				AF8C6C5B2BB12E1900C47306 /* Services */,
 				AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */,
 				AF8C6C4F2BB12D5D00C47306 /* Assets.xcassets */,
 				AF8C6C512BB12D5D00C47306 /* Preview Content */,
@@ -65,6 +109,126 @@
 				AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF8C6C592BB12DE000C47306 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AF8C6C5A2BB12DE800C47306 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C5E2BB12E6F00C47306 /* Authentication */,
+				AF8C6C652BB12EBB00C47306 /* Components */,
+				AF8C6C642BB12EAE00C47306 /* Feed */,
+				AF8C6C632BB12EA400C47306 /* Profile */,
+				AF8C6C622BB12E9D00C47306 /* Root */,
+				AF8C6C612BB12E9400C47306 /* Search */,
+				AF8C6C602BB12E8B00C47306 /* TabBar */,
+				AF8C6C5F2BB12E7E00C47306 /* UploadPost */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AF8C6C5B2BB12E1900C47306 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF8C6C5C2BB12E1F00C47306 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C892BB130CA00C47306 /* User.swift */,
+				AF8C6C8B2BB130E000C47306 /* Post.swift */,
+				AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF8C6C5D2BB12E2900C47306 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		AF8C6C5E2BB12E6F00C47306 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C662BB12F1A00C47306 /* AuthenticationView.swift */,
+				AF8C6C682BB12F2800C47306 /* AddEmailView.swift */,
+				AF8C6C6A2BB12F3700C47306 /* CreateUsernameView.swift */,
+				AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */,
+				AF8C6C6F2BB12F6600C47306 /* CompleteSignUpView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AF8C6C5F2BB12E7E00C47306 /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C852BB130A400C47306 /* UploadPostView.swift */,
+				AF8C6C872BB130B100C47306 /* UploadPostViewModel.swift */,
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		AF8C6C602BB12E8B00C47306 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C832BB1309000C47306 /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		AF8C6C612BB12E9400C47306 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C812BB1301600C47306 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AF8C6C622BB12E9D00C47306 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		AF8C6C632BB12EA400C47306 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C7B2BB12FD900C47306 /* ProfileView.swift */,
+				AF8C6C7D2BB12FE800C47306 /* CurrentUserProfileView.swift */,
+				AF8C6C7F2BB12FFB00C47306 /* ProfileHeaderView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AF8C6C642BB12EAE00C47306 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C772BB12FBE00C47306 /* FeedView.swift */,
+				AF8C6C792BB12FC500C47306 /* FeedCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		AF8C6C652BB12EBB00C47306 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C712BB12F7F00C47306 /* UserStatView.swift */,
+				AF8C6C732BB12F9700C47306 /* LUPTextFieldModifier.swift */,
+				AF8C6C752BB12FAB00C47306 /* PostGridView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +301,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8C6C702BB12F6600C47306 /* CompleteSignUpView.swift in Sources */,
+				AF8C6C7C2BB12FD900C47306 /* ProfileView.swift in Sources */,
 				AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */,
+				AF8C6C7E2BB12FE800C47306 /* CurrentUserProfileView.swift in Sources */,
+				AF8C6C882BB130B100C47306 /* UploadPostViewModel.swift in Sources */,
+				AF8C6C6B2BB12F3700C47306 /* CreateUsernameView.swift in Sources */,
+				AF8C6C722BB12F7F00C47306 /* UserStatView.swift in Sources */,
+				AF8C6C692BB12F2800C47306 /* AddEmailView.swift in Sources */,
+				AF8C6C8A2BB130CA00C47306 /* User.swift in Sources */,
+				AF8C6C862BB130A400C47306 /* UploadPostView.swift in Sources */,
+				AF8C6C8E2BB130F000C47306 /* ExerciseSession.swift in Sources */,
+				AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */,
+				AF8C6C7A2BB12FC500C47306 /* FeedCell.swift in Sources */,
+				AF8C6C8C2BB130E000C47306 /* Post.swift in Sources */,
+				AF8C6C842BB1309000C47306 /* MainTabView.swift in Sources */,
+				AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */,
+				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
+				AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */,
+				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
+				AF8C6C762BB12FAB00C47306 /* PostGridView.swift in Sources */,
+				AF8C6C672BB12F1A00C47306 /* AuthenticationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
