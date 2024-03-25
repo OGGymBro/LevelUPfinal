@@ -41,6 +41,8 @@
 		AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B142BB153C900D679D5 /* RegistrationViewModel.swift */; };
 		AFF37B172BB1903400D679D5 /* RoleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B162BB1903400D679D5 /* RoleChoice.swift */; };
 		AFF37B192BB1A19D00D679D5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B182BB1A19D00D679D5 /* LoginViewModel.swift */; };
+		AFF37B1B2BB1B2C800D679D5 /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B1A2BB1B2C800D679D5 /* ForumPost.swift */; };
+		AFF37B1D2BB1B2E100D679D5 /* ExerciseVideoPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B1C2BB1B2E100D679D5 /* ExerciseVideoPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		AFF37B142BB153C900D679D5 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AFF37B162BB1903400D679D5 /* RoleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleChoice.swift; sourceTree = "<group>"; };
 		AFF37B182BB1A19D00D679D5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AFF37B1A2BB1B2C800D679D5 /* ForumPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
+		AFF37B1C2BB1B2E100D679D5 /* ExerciseVideoPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVideoPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 				AF8C6C892BB130CA00C47306 /* User.swift */,
 				AF8C6C8B2BB130E000C47306 /* Post.swift */,
 				AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */,
+				AFF37B1A2BB1B2C800D679D5 /* ForumPost.swift */,
+				AFF37B1C2BB1B2E100D679D5 /* ExerciseVideoPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF37B172BB1903400D679D5 /* RoleChoice.swift in Sources */,
+				AFF37B1D2BB1B2E100D679D5 /* ExerciseVideoPost.swift in Sources */,
 				AF8C6C702BB12F6600C47306 /* CompleteSignUpView.swift in Sources */,
 				AF8C6C7C2BB12FD900C47306 /* ProfileView.swift in Sources */,
 				AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */,
@@ -394,6 +401,7 @@
 				AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */,
 				AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */,
 				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
+				AFF37B1B2BB1B2C800D679D5 /* ForumPost.swift in Sources */,
 				AF8C6C762BB12FAB00C47306 /* PostGridView.swift in Sources */,
 				AF8C6C672BB12F1A00C47306 /* LoginView.swift in Sources */,
 			);
