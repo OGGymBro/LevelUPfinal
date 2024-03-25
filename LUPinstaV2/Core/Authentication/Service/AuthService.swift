@@ -7,6 +7,7 @@
 
 import Foundation
 import FirebaseAuth
+
 class AuthService{
     @Published var userSession:FirebaseAuth.User?
     

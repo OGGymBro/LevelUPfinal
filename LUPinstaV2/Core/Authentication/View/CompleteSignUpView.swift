@@ -48,7 +48,7 @@ struct CompleteSignUpView: View {
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
                     .onTapGesture {
-                        //dismiss()
+                        dismiss()
                     }
             }
         }

@@ -109,9 +109,6 @@
 				AF8C6C5A2BB12DE800C47306 /* Core */,
 				AF8C6C5D2BB12E2900C47306 /* Extentions */,
 				AF8C6C5C2BB12E1F00C47306 /* Model */,
-				AF8C6C5B2BB12E1900C47306 /* Services */,
-				AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */,
-				AFCBE7822BB13B7E00072EA3 /* ContentViewModel.swift */,
 				AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */,
 				AFF37B0E2BB143C200D679D5 /* assets.xcassets */,
 				AF8C6C512BB12D5D00C47306 /* Preview Content */,
@@ -150,12 +147,12 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		AF8C6C5B2BB12E1900C47306 /* Services */ = {
+		AF8C6C5B2BB12E1900C47306 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				AFCBE7842BB13BC900072EA3 /* AuthService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		AF8C6C5C2BB12E1F00C47306 /* Model */ = {
@@ -178,11 +175,8 @@
 		AF8C6C5E2BB12E6F00C47306 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				AF8C6C662BB12F1A00C47306 /* LoginView.swift */,
-				AF8C6C682BB12F2800C47306 /* AddEmailView.swift */,
-				AF8C6C6A2BB12F3700C47306 /* CreateUsernameView.swift */,
-				AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */,
-				AF8C6C6F2BB12F6600C47306 /* CompleteSignUpView.swift */,
+				AF8C6C5B2BB12E1900C47306 /* Service */,
+				AFF37B102BB14EE500D679D5 /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -215,6 +209,8 @@
 		AF8C6C622BB12E9D00C47306 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				AFF37B122BB150A800D679D5 /* ViewModel */,
+				AFF37B112BB150A300D679D5 /* View */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -246,6 +242,34 @@
 				AF8C6C752BB12FAB00C47306 /* PostGridView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		AFF37B102BB14EE500D679D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C662BB12F1A00C47306 /* LoginView.swift */,
+				AF8C6C682BB12F2800C47306 /* AddEmailView.swift */,
+				AF8C6C6A2BB12F3700C47306 /* CreateUsernameView.swift */,
+				AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */,
+				AF8C6C6F2BB12F6600C47306 /* CompleteSignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFF37B112BB150A300D679D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFF37B122BB150A800D679D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFCBE7822BB13B7E00072EA3 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
