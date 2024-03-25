@@ -58,15 +58,21 @@ struct ProfileHeaderView: View {
             
             Button(action: {
                 // Action to perform when the button is tapped
+                if user.isCurrentUser {
+                    print("Show edit profile")
+                }else {
+                    print("Book Trainer")
+                }
             }) {
-                Text("Edit Profile")
+                Text(user.isCurrentUser ? "Edit Profile" : "Book")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(width: 360, height: 32)
                     .foregroundColor(.black)
-                    .background(.green) // Set background color to green
+                    .background(user.isCurrentUser ? .cyan : .green) // Set background color to green
                     .cornerRadius(6)
-                    .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.black, lineWidth: 1.0))
+                    .overlay(RoundedRectangle(cornerRadius: 6)
+                        .stroke(Color.black, lineWidth: 1.0))
             }
 
             
