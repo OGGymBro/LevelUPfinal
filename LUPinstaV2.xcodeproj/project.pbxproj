@@ -10,6 +10,8 @@
 		AF383AEC2BB1E9FD00EB7833 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF383AEB2BB1E9FD00EB7833 /* Lottie */; };
 		AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */; };
 		AF383AF02BB1EB4900EB7833 /* gym11.json in Resources */ = {isa = PBXBuildFile; fileRef = AF383AEF2BB1EB4800EB7833 /* gym11.json */; };
+		AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */; };
+		AF4DB7512BB341CA007D4D26 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */; };
 		AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */; };
 		AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */; };
 		AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoader.swift; sourceTree = "<group>"; };
 		AF383AEF2BB1EB4800EB7833 /* gym11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gym11.json; sourceTree = "<group>"; };
+		AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		AF8C6C482BB12D5C00C47306 /* LUPinstaV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUPinstaV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUPinstaV2App.swift; sourceTree = "<group>"; };
 		AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF4DB74E2BB34151007D4D26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C7B2BB12FD900C47306 /* ProfileView.swift */,
+				AF8C6C7D2BB12FE800C47306 /* CurrentUserProfileView.swift */,
+				AF8C6C7F2BB12FFB00C47306 /* ProfileHeaderView.swift */,
+				AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF4DB74F2BB3415A007D4D26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AF8C6C3F2BB12D5C00C47306 = {
 			isa = PBXGroup;
 			children = (
@@ -244,9 +267,8 @@
 		AF8C6C632BB12EA400C47306 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				AF8C6C7B2BB12FD900C47306 /* ProfileView.swift */,
-				AF8C6C7D2BB12FE800C47306 /* CurrentUserProfileView.swift */,
-				AF8C6C7F2BB12FFB00C47306 /* ProfileHeaderView.swift */,
+				AF4DB74E2BB34151007D4D26 /* View */,
+				AF4DB74F2BB3415A007D4D26 /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -419,6 +441,7 @@
 				AFF37B172BB1903400D679D5 /* RoleChoice.swift in Sources */,
 				AFF37B1D2BB1B2E100D679D5 /* ExerciseVideoPost.swift in Sources */,
 				AF8C6C702BB12F6600C47306 /* CompleteSignUpView.swift in Sources */,
+				AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */,
 				AF8C6C7C2BB12FD900C47306 /* ProfileView.swift in Sources */,
 				AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */,
 				AF8C6C7E2BB12FE800C47306 /* CurrentUserProfileView.swift in Sources */,
@@ -441,6 +464,7 @@
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
 				AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */,
+				AF4DB7512BB341CA007D4D26 /* EditProfileViewModel.swift in Sources */,
 				AFF37B242BB1C29500D679D5 /* SearchViewModel.swift in Sources */,
 				AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */,
 				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
@@ -589,6 +613,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,6 +643,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
