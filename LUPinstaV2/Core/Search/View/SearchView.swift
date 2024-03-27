@@ -28,13 +28,16 @@ struct SearchView: View {
                                     
                                     if user.fullname != nil {
                                         Text(user.fullname ?? "")
+                                    }else {
+                                        Text("")
+                                            .padding(.vertical,0.25)
                                     }
-                                    
+                                    Divider()
                                 }
                                 
                                 Spacer()
                             }
-                            .accentColor(.black)
+                            .accentColor(.gray)
                             .padding(.horizontal)
                             //
                         }
