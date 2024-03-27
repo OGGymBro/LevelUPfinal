@@ -8,7 +8,10 @@
 import SwiftUI
 import PhotosUI
 
+
+
 struct EditProfileView: View {
+    @State private var isLoading = false
     
     @Environment(\.dismiss) var dismiss
     
@@ -19,87 +22,101 @@ struct EditProfileView: View {
     }
     
     var body: some View {
-        VStack{
-            
-            //toolbar
-            VStack {
-                HStack{
-                    Button("Cancel"){
-                        dismiss()
-                    }
-                    .foregroundStyle(.red)
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    
-                    Spacer()
-                    
-                    Text("Edit Profile")
-                        .font(.headline)
-                        .fontWeight(.semibold)
-                    
-                    Spacer()
-                    
-                    Button{
-                        Task {
-                            try await viewModel.updateUserData()                        }
-                    } label: {
-                        Text("Done")
-                            .font(.headline)
-                            .fontWeight(.bold)
-                    }
-                    .foregroundStyle(.green)
-                }
-                .padding(.horizontal)
-                Divider()
-            }
-
-            
-            
-            
-            //edit profile pic
-            PhotosPicker(selection: $viewModel.selectedImage){
+        ZStack{
+            VStack{
+                
+                //toolbar
                 VStack {
-                    if let image = viewModel.profileImage {
-                        image
-                            .resizable()
-                            .frame(width:100 ,height: 100)
-                            .foregroundStyle(.green)
-                            .background(.black)
-                            .clipShape(Circle())
-                    }
-                    else {
-                        Image(systemName: "person.circle")
-                            .resizable()
-                            .frame(width:100 ,height: 100)
-                            .foregroundStyle(.green)
-                            .background(.black)
-                            .clipShape(Circle())
-                    }
-                    
-                    Text("Edit Profile Picture")
+                    HStack{
+                        Button("Cancel"){
+                            dismiss()
+                        }
+                        .foregroundStyle(.red)
                         .font(.headline)
                         .fontWeight(.bold)
-                    
+                        
+                        Spacer()
+                        
+                        Text("Edit Profile")
+                            .font(.headline)
+                            .fontWeight(.semibold)
+                        
+                        Spacer()
+                        
+                        Button{
+                            Task {
+                                isLoading.toggle()
+                                try await viewModel.updateUserData()
+                                dismiss()
+                                isLoading.toggle()
+                            }
+                        } label: {
+                            Text("Done")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                        }
+                        .foregroundStyle(.green)
+                    }
+                    .padding(.horizontal)
                     Divider()
                 }
-                .padding(.vertical,8)
-                    
-            }
-            
-            //edit pofile info
-            VStack{
-                EditProfileRowView(title: "Name",
-                                   placeholder: "Enter Your Name...",
-                                   text: $viewModel.fullname)
+
                 
-                EditProfileRowView(title: "Bio",
-                                   placeholder: "Eneter Your Bio...",
-                                   text: $viewModel.bio)
+                
+                
+                //edit profile pic
+                PhotosPicker(selection: $viewModel.selectedImage){
+                    VStack {
+                        if let image = viewModel.profileImage {
+                            image
+                                .resizable()
+                                .frame(width:100 ,height: 100)
+                                .foregroundStyle(.green)
+                                .background(.black)
+                                .clipShape(Circle())
+                        }
+                        else {
+                            Image(systemName: "person.circle")
+                                .resizable()
+                                .frame(width:100 ,height: 100)
+                                .foregroundStyle(.green)
+                                .background(.black)
+                                .clipShape(Circle())
+                        }
+                        
+                        Text("Edit Profile Picture")
+                            .font(.headline)
+                            .fontWeight(.bold)
+                        
+                        Divider()
+                    }
+                    .padding(.vertical,8)
+                        
+                }
+                
+                //edit pofile info
+                VStack{
+                    EditProfileRowView(title: "Name",
+                                       placeholder: "Enter Your Name...",
+                                       text: $viewModel.fullname)
+                    
+                    EditProfileRowView(title: "Bio",
+                                       placeholder: "Eneter Your Bio...",
+                                       text: $viewModel.bio)
+                }
+                .padding(.horizontal)
+                
+                Spacer()
+                
             }
-            .padding(.horizontal)
             
-            Spacer()
-            
+            //
+            if isLoading {
+                Color.black.opacity(0.5)
+                    .edgesIgnoringSafeArea(.all)
+                
+                LottieLoader(fileName: "gym11") // or any other loading indicator
+            }
         }
     }
 }
