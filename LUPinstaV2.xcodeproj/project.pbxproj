@@ -16,6 +16,8 @@
 		AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */; };
 		AF6ACB632BB40ABD002FBB00 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */; };
 		AF6ACB692BB46DB2002FBB00 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB682BB46DB2002FBB00 /* FeedViewModel.swift */; };
+		AF6ACB6B2BB4780A002FBB00 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB6A2BB4780A002FBB00 /* PostService.swift */; };
+		AF6ACB6F2BB47C87002FBB00 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB6E2BB47C87002FBB00 /* PostGridViewModel.swift */; };
 		AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */; };
 		AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */; };
 		AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */; };
@@ -64,6 +66,8 @@
 		AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		AF6ACB682BB46DB2002FBB00 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		AF6ACB6A2BB4780A002FBB00 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		AF6ACB6E2BB47C87002FBB00 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		AF8C6C482BB12D5C00C47306 /* LUPinstaV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUPinstaV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUPinstaV2App.swift; sourceTree = "<group>"; };
 		AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +170,25 @@
 			isa = PBXGroup;
 			children = (
 				AF6ACB682BB46DB2002FBB00 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF6ACB6C2BB47C59002FBB00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6C712BB12F7F00C47306 /* UserStatView.swift */,
+				AF8C6C732BB12F9700C47306 /* LUPTextFieldModifier.swift */,
+				AF8C6C752BB12FAB00C47306 /* PostGridView.swift */,
+				AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF6ACB6D2BB47C5F002FBB00 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF6ACB6E2BB47C87002FBB00 /* PostGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -326,10 +349,8 @@
 		AF8C6C652BB12EBB00C47306 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				AF8C6C712BB12F7F00C47306 /* UserStatView.swift */,
-				AF8C6C732BB12F9700C47306 /* LUPTextFieldModifier.swift */,
-				AF8C6C752BB12FAB00C47306 /* PostGridView.swift */,
-				AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */,
+				AF6ACB6C2BB47C59002FBB00 /* View */,
+				AF6ACB6D2BB47C5F002FBB00 /* ViewModel */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -378,6 +399,7 @@
 				AFF37B1F2BB1C14200D679D5 /* UserService.swift */,
 				AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */,
 				AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */,
+				AF6ACB6A2BB4780A002FBB00 /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -508,6 +530,7 @@
 				AFCBE7852BB13BC900072EA3 /* AuthService.swift in Sources */,
 				AF8C6C842BB1309000C47306 /* MainTabView.swift in Sources */,
 				AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */,
+				AF6ACB6F2BB47C87002FBB00 /* PostGridViewModel.swift in Sources */,
 				AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */,
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
@@ -516,6 +539,7 @@
 				AFF37B242BB1C29500D679D5 /* SearchViewModel.swift in Sources */,
 				AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */,
 				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
+				AF6ACB6B2BB4780A002FBB00 /* PostService.swift in Sources */,
 				AFF37B202BB1C14200D679D5 /* UserService.swift in Sources */,
 				AFF37B1B2BB1B2C800D679D5 /* ForumPost.swift in Sources */,
 				AF8C6C762BB12FAB00C47306 /* PostGridView.swift in Sources */,
