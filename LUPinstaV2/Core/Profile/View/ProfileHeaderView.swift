@@ -17,12 +17,7 @@ struct ProfileHeaderView: View {
             
             HStack (spacing:20){
                 //pics
-                Image(user.profileImageUrl ?? "")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80,height: 80)
-                    .clipShape(Circle())
-                
+                CircularProfileImageView(user: user,size: .large)
               
                 
                 HStack(spacing: 8){
@@ -54,6 +49,7 @@ struct ProfileHeaderView: View {
             }
             .frame(maxWidth: .infinity,alignment: .leading)
             .padding(.horizontal)
+            .padding(.leading,20)
          
             //action button
             

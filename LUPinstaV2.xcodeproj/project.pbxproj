@@ -14,6 +14,7 @@
 		AF4DB7512BB341CA007D4D26 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */; };
 		AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */; };
 		AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */; };
+		AF6ACB632BB40ABD002FBB00 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */; };
 		AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */; };
 		AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */; };
 		AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		AF8C6C482BB12D5C00C47306 /* LUPinstaV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LUPinstaV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUPinstaV2App.swift; sourceTree = "<group>"; };
 		AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				AF8C6C712BB12F7F00C47306 /* UserStatView.swift */,
 				AF8C6C732BB12F9700C47306 /* LUPTextFieldModifier.swift */,
 				AF8C6C752BB12FAB00C47306 /* PostGridView.swift */,
+				AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF37B172BB1903400D679D5 /* RoleChoice.swift in Sources */,
+				AF6ACB632BB40ABD002FBB00 /* CircularProfileImageView.swift in Sources */,
 				AFF37B1D2BB1B2E100D679D5 /* ExerciseVideoPost.swift in Sources */,
 				AF8C6C702BB12F6600C47306 /* CompleteSignUpView.swift in Sources */,
 				AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */,

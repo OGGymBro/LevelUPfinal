@@ -20,15 +20,11 @@ struct SearchView: View {
                         NavigationLink(value: user) {
                             //
                             HStack {
-                                Image(systemName: "person.circle")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .foregroundStyle(.gray)
-                                    .frame(width: 40,height: 40)
-                                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                CircularProfileImageView(user: user, size: .small)
                                 
                                 VStack(alignment: .leading){
                                     Text(user.username)
+                                        .foregroundStyle(.green)
                                     
                                     if user.fullname != nil {
                                         Text(user.fullname ?? "")
@@ -38,7 +34,7 @@ struct SearchView: View {
                                 
                                 Spacer()
                             }
-                            .accentColor(.green)
+                            .accentColor(.black)
                             .padding(.horizontal)
                             //
                         }
