@@ -13,6 +13,7 @@
 		AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */; };
 		AF4DB7512BB341CA007D4D26 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */; };
 		AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */; };
+		AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */; };
 		AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4B2BB12D5C00C47306 /* LUPinstaV2App.swift */; };
 		AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C4D2BB12D5C00C47306 /* ContentView.swift */; };
 		AF8C6C532BB12D5D00C47306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6C522BB12D5D00C47306 /* Preview Assets.xcassets */; };
@@ -101,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */,
 				AF383AEC2BB1E9FD00EB7833 /* Lottie in Frameworks */,
 				AF8C6C912BB1336F00C47306 /* FirebaseAuth in Frameworks */,
 				AF8C6C972BB1336F00C47306 /* FirebaseStorage in Frameworks */,
@@ -380,6 +382,7 @@
 				AF8C6C942BB1336F00C47306 /* FirebaseFirestoreSwift */,
 				AF8C6C962BB1336F00C47306 /* FirebaseStorage */,
 				AF383AEB2BB1E9FD00EB7833 /* Lottie */,
+				AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */,
 			);
 			productName = LUPinstaV2;
 			productReference = AF8C6C482BB12D5C00C47306 /* LUPinstaV2.app */;
@@ -412,6 +415,7 @@
 			packageReferences = (
 				AF8C6C8F2BB1336F00C47306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				AF383AEA2BB1E9FD00EB7833 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				AF6ACB0B2BB3DC1E002FBB00 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = AF8C6C492BB12D5C00C47306 /* Products */;
 			projectDirPath = "";
@@ -693,6 +697,14 @@
 				minimumVersion = 4.4.1;
 			};
 		};
+		AF6ACB0B2BB3DC1E002FBB00 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 		AF8C6C8F2BB1336F00C47306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -708,6 +720,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AF383AEA2BB1E9FD00EB7833 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF6ACB0B2BB3DC1E002FBB00 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		AF8C6C902BB1336F00C47306 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
