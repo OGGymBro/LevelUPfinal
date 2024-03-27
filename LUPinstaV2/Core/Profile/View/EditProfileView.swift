@@ -107,7 +107,7 @@ struct EditProfileView: View {
             
             //
             if isLoading {
-                Color.black.opacity(0.5)
+                Color.black.opacity(0.1)
                     .edgesIgnoringSafeArea(.all)
                 
                 LottieLoader(fileName: "gym11") // or any other loading indicator
