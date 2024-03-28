@@ -12,6 +12,7 @@
 		AF383AF02BB1EB4900EB7833 /* gym11.json in Resources */ = {isa = PBXBuildFile; fileRef = AF383AEF2BB1EB4800EB7833 /* gym11.json */; };
 		AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */; };
 		AF4DB7512BB341CA007D4D26 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */; };
+		AF50CB342BB5C03800E86754 /* CoachTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50CB332BB5C03800E86754 /* CoachTabView.swift */; };
 		AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */; };
 		AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */; };
 		AF6ACB632BB40ABD002FBB00 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */; };
@@ -63,6 +64,7 @@
 		AF383AEF2BB1EB4800EB7833 /* gym11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gym11.json; sourceTree = "<group>"; };
 		AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		AF50CB332BB5C03800E86754 /* CoachTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTabView.swift; sourceTree = "<group>"; };
 		AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		AF6ACB682BB46DB2002FBB00 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
@@ -139,6 +141,22 @@
 				AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF50CB312BB5BFC900E86754 /* Coach App */ = {
+			isa = PBXGroup;
+			children = (
+				AF50CB322BB5C00F00E86754 /* CoachTabBar */,
+			);
+			path = "Coach App";
+			sourceTree = "<group>";
+		};
+		AF50CB322BB5C00F00E86754 /* CoachTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AF50CB332BB5C03800E86754 /* CoachTabView.swift */,
+			);
+			path = CoachTabBar;
 			sourceTree = "<group>";
 		};
 		AF6ACB642BB41FAE002FBB00 /* ViewModel */ = {
@@ -221,6 +239,7 @@
 				AF383AEF2BB1EB4800EB7833 /* gym11.json */,
 				AFF37B0E2BB143C200D679D5 /* assets.xcassets */,
 				AF8C6C512BB12D5D00C47306 /* Preview Content */,
+				AF50CB312BB5BFC900E86754 /* Coach App */,
 			);
 			path = LUPinstaV2;
 			sourceTree = "<group>";
@@ -526,6 +545,7 @@
 				AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */,
 				AFCBE7832BB13B7E00072EA3 /* ContentViewModel.swift in Sources */,
 				AF8C6C7A2BB12FC500C47306 /* FeedCell.swift in Sources */,
+				AF50CB342BB5C03800E86754 /* CoachTabView.swift in Sources */,
 				AF8C6C8C2BB130E000C47306 /* Post.swift in Sources */,
 				AFCBE7852BB13BC900072EA3 /* AuthService.swift in Sources */,
 				AF8C6C842BB1309000C47306 /* MainTabView.swift in Sources */,
