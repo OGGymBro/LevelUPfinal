@@ -32,21 +32,25 @@ struct LoginView: View {
                             .modifier(LUPTextFieldModifier())
                     }
                     
-                    Button{
-                        // Forgot Password Action
-                    } label: {
-                        Text("Forgot Password ?")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
-                            .padding(.top)
-                            .padding(.trailing,24)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
+//                    Button{
+//                        // Forgot Password Action
+//                    } label: {
+//                        Text("Forgot Password ?")
+//                            .font(.footnote)
+//                            .fontWeight(.semibold)
+//                            .padding(.top)
+//                            .padding(.trailing,24)
+//                    }
+//                    .frame(maxWidth: .infinity, alignment: .trailing)
                     
                     Button {
                         Task {
                             isLoading.toggle()
-                            try await viewModel.signIn()
+                            do {
+                                try await viewModel.signIn()
+                            }catch {
+                                print("ERROR \(error.localizedDescription)")
+                            }
                             isLoading.toggle()
                         }
                     } label: {
@@ -55,34 +59,35 @@ struct LoginView: View {
                             .fontWeight(.semibold)
                             .foregroundStyle(.white)
                             .frame(width: 360, height: 44)
-                            .background(Color(.systemGreen))
+                            .background(viewModel.isLoginEnabled ? Color(.systemGreen) : Color.gray) // Green when enabled, gray when disabled
                             .cornerRadius(10)
                     }
                     .padding(.vertical)
+                    .disabled(!viewModel.isLoginEnabled)
                     
-                    HStack {
-                        Rectangle()
-                            .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
-                        
-                        Text("OR")
-                            .font(.footnote)
-                            .fontWeight(.bold)
-                        
-                        Rectangle()
-                            .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
-                    }
-                    .foregroundStyle(.gray)
+//                    HStack {
+//                        Rectangle()
+//                            .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+//                        
+//                        Text("OR")
+//                            .font(.footnote)
+//                            .fontWeight(.bold)
+//                        
+//                        Rectangle()
+//                            .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+//                    }
+//                    .foregroundStyle(.gray)
                     
-                    HStack {
-                        Image("Applogo")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                        
-                        Text("Login with Google")
-                            .font(.footnote)
-                            .fontWeight(.bold)
-                    }
-                    .padding(.top,8)
+//                    HStack {
+//                        Image("Applogo")
+//                            .resizable()
+//                            .frame(width: 20, height: 20)
+//                        
+//                        Text("Login with Google")
+//                            .font(.footnote)
+//                            .fontWeight(.bold)
+//                    }
+//                    .padding(.top,8)
                     
                     Spacer()
                     
@@ -98,6 +103,7 @@ struct LoginView: View {
                             Text("Sign Up")
                                 .fontWeight(.semibold)
                         }
+                        .foregroundStyle(.green)
                     }
                     .font(.callout)
                     .padding(.vertical)
