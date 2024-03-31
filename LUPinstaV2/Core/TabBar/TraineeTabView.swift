@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainTabView: View {
+struct TraineeTabView: View {
     let user: User
     
     @State private var selectedIndex = 0
@@ -37,7 +37,7 @@ struct MainTabView: View {
                     Image(systemName: "plus.square")
                 }.tag(2)
             
-            Text("Mentorsip")
+            Text("Mentorsip Chats")
                 .onAppear{
                     selectedIndex = 3
                 }
@@ -62,5 +62,5 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView(user: User.MOCK_USERS[0])
+    TraineeTabView(user: User.MOCK_USERS[0])
 }

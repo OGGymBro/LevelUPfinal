@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF241DED2BB9BF2300B892DB /* CoachTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF241DEC2BB9BF2300B892DB /* CoachTabView.swift */; };
 		AF383AEC2BB1E9FD00EB7833 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF383AEB2BB1E9FD00EB7833 /* Lottie */; };
 		AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */; };
 		AF383AF02BB1EB4900EB7833 /* gym11.json in Resources */ = {isa = PBXBuildFile; fileRef = AF383AEF2BB1EB4800EB7833 /* gym11.json */; };
 		AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */; };
 		AF4DB7512BB341CA007D4D26 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */; };
-		AF50CB342BB5C03800E86754 /* CoachTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50CB332BB5C03800E86754 /* CoachTabView.swift */; };
 		AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */; };
 		AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */; };
 		AF6ACB632BB40ABD002FBB00 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */; };
@@ -36,7 +36,7 @@
 		AF8C6C7E2BB12FE800C47306 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C7D2BB12FE800C47306 /* CurrentUserProfileView.swift */; };
 		AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C7F2BB12FFB00C47306 /* ProfileHeaderView.swift */; };
 		AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C812BB1301600C47306 /* SearchView.swift */; };
-		AF8C6C842BB1309000C47306 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C832BB1309000C47306 /* MainTabView.swift */; };
+		AF8C6C842BB1309000C47306 /* TraineeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C832BB1309000C47306 /* TraineeTabView.swift */; };
 		AF8C6C862BB130A400C47306 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C852BB130A400C47306 /* UploadPostView.swift */; };
 		AF8C6C882BB130B100C47306 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C872BB130B100C47306 /* UploadPostViewModel.swift */; };
 		AF8C6C8A2BB130CA00C47306 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6C892BB130CA00C47306 /* User.swift */; };
@@ -60,11 +60,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF241DEC2BB9BF2300B892DB /* CoachTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTabView.swift; sourceTree = "<group>"; };
 		AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoader.swift; sourceTree = "<group>"; };
 		AF383AEF2BB1EB4800EB7833 /* gym11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gym11.json; sourceTree = "<group>"; };
 		AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
-		AF50CB332BB5C03800E86754 /* CoachTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTabView.swift; sourceTree = "<group>"; };
 		AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		AF6ACB682BB46DB2002FBB00 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		AF8C6C7D2BB12FE800C47306 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		AF8C6C7F2BB12FFB00C47306 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		AF8C6C812BB1301600C47306 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		AF8C6C832BB1309000C47306 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AF8C6C832BB1309000C47306 /* TraineeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraineeTabView.swift; sourceTree = "<group>"; };
 		AF8C6C852BB130A400C47306 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		AF8C6C872BB130B100C47306 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		AF8C6C892BB130CA00C47306 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		AF50CB322BB5C00F00E86754 /* CoachTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				AF50CB332BB5C03800E86754 /* CoachTabView.swift */,
+				AF241DEC2BB9BF2300B892DB /* CoachTabView.swift */,
 			);
 			path = CoachTabBar;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 		AF8C6C602BB12E8B00C47306 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				AF8C6C832BB1309000C47306 /* MainTabView.swift */,
+				AF8C6C832BB1309000C47306 /* TraineeTabView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -545,10 +545,10 @@
 				AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */,
 				AFCBE7832BB13B7E00072EA3 /* ContentViewModel.swift in Sources */,
 				AF8C6C7A2BB12FC500C47306 /* FeedCell.swift in Sources */,
-				AF50CB342BB5C03800E86754 /* CoachTabView.swift in Sources */,
+				AF241DED2BB9BF2300B892DB /* CoachTabView.swift in Sources */,
 				AF8C6C8C2BB130E000C47306 /* Post.swift in Sources */,
 				AFCBE7852BB13BC900072EA3 /* AuthService.swift in Sources */,
-				AF8C6C842BB1309000C47306 /* MainTabView.swift in Sources */,
+				AF8C6C842BB1309000C47306 /* TraineeTabView.swift in Sources */,
 				AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */,
 				AF6ACB6F2BB47C87002FBB00 /* PostGridViewModel.swift in Sources */,
 				AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */,

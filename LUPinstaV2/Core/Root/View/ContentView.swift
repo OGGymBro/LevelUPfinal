@@ -18,9 +18,11 @@ struct ContentView: View {
                 } else if let currentUser = viewModel.currentUser {
                     // Check the role directly without using == for comparison
                     if currentUser.role == "Coach" {
-                        CoachTabView()
+                        CoachTabView(user: currentUser)
+                        
                     } else if currentUser.role == "Trainee" {
-                        MainTabView(user: currentUser)
+                        TraineeTabView(user: currentUser)
+                        
                     } else {
                         // Handle unexpected roles here
                         Text("Unknown role")

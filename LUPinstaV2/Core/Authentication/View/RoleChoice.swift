@@ -33,9 +33,9 @@ struct RoleChoice: View {
                     viewModel.role = "Coach"
                 }) {
                     HStack {
-                        Image(systemName: "person.circle.fill")
+                        Image(systemName: "figure.and.child.holdinghands")
                             .resizable()
-                            .frame(width: 25, height: 25)
+                            .frame(width: 50, height: 50)
                         Text("Coach")
                             .padding()
                     }
@@ -54,9 +54,9 @@ struct RoleChoice: View {
                     viewModel.role = "Trainee"
                 }) {
                     HStack {
-                        Image(systemName: "person.circle.fill")
+                        Image(systemName: "figure.run")
                             .resizable()
-                            .frame(width: 25, height: 25)
+                            .frame(width: 50, height: 50)
                         Text("Trainee")
                             .padding()
                     }
