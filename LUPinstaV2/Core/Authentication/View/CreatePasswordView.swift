@@ -20,14 +20,47 @@ struct CreatePasswordView: View {
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .padding(.top,24)
             
-            Text("Your password must be atleast 8 characters in length and should also include \nnumbers ,special characters,uppercase and lowercase letters.")
+            Text("Your password must be")
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.bottom,24)
             
+            //8 char
+            Text("atleast 8 characters in length")
+                .foregroundStyle(viewModel.passwordHasGoodLength ? .green: .gray)
+                .fontWeight(.bold)
+            
+            
+            Text("and should include")
+                .foregroundStyle(.green)
+            
+            Text("numbers")
+                .foregroundStyle(viewModel.passwordHasNumbers ? .green : .gray)
+                .fontWeight(.bold)
+            
+            Text("special characters")
+                .foregroundStyle(viewModel.passwordHasSpecialCharacters ? .green : .gray)
+                .fontWeight(.bold)
+            
+            Text("uppercase")
+                .foregroundStyle(viewModel.passwordHasUppercase ? .green : .gray)
+                .fontWeight(.bold)
+            
+            + Text(" and")
+                .foregroundStyle(.green)
+            
+            Text("lowercase")
+                .foregroundStyle(viewModel.passwordHasLowercase ? .green : .gray)
+                .fontWeight(.bold)
+            
+            + Text(" letters")
+                .foregroundStyle(.green)
+                
+            
             SecureField("Enter your password", text: $viewModel.password)
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .modifier(LUPTextFieldModifier())
+                .padding(.top,24)
             
             NavigationLink{
                 RoleChoice()

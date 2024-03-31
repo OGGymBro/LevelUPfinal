@@ -28,7 +28,8 @@ class RegistrationViewModel: ObservableObject {
     var shouldUsernameButtonBeEnabled: Bool {
         return username.count >= 3
     }
-
+    
+    
     //password
     var shouldPasswordButtonBeEnabled: Bool {
         // Check if the password contains at least one number, one lowercase letter, one uppercase letter, and one special character
@@ -61,6 +62,28 @@ class RegistrationViewModel: ObservableObject {
         username = ""
         role = ""
     }
+    
+    //password individual check
+    var passwordHasGoodLength:Bool {
+        return password.count >= 8
+    }
+
+    var passwordHasLowercase:Bool {
+        return password.contains { $0.isLowercase }
+    }
+    
+    var passwordHasUppercase:Bool {
+        return password.contains { $0.isUppercase }
+    }
+    
+    var passwordHasNumbers:Bool {
+        return password.contains { $0.isNumber }
+    }
+    
+    var passwordHasSpecialCharacters:Bool {
+        return password.rangeOfCharacter(from: .punctuationCharacters) != nil
+    }
+    
 }
 
 //extension String {
