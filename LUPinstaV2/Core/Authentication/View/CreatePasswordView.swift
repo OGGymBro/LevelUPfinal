@@ -20,7 +20,7 @@ struct CreatePasswordView: View {
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .padding(.top,24)
             
-            Text("Your password must be atleast 8 characters")
+            Text("Your password must be atleast 8 characters in length and should also include \nnumbers ,special characters,uppercase and lowercase letters.")
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.bottom,24)
@@ -37,10 +37,13 @@ struct CreatePasswordView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
-                    .frame(width: 345,height: 44)
-                    .background(Color(.systemGreen))
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 44)
+                    .background(viewModel.shouldPasswordButtonBeEnabled ? .green : .gray)
                     .cornerRadius(10)
+                    .disabled(!viewModel.shouldPasswordButtonBeEnabled)
             }
+            .padding(.horizontal)
             
             
             Spacer()

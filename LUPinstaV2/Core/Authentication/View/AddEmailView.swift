@@ -37,10 +37,13 @@ struct AddEmailView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
-                    .frame(width: 345,height: 44)
-                    .background(Color(.systemGreen))
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 44)
+                    .background(viewModel.shouldEmailButtonBeEnabled ? .green : .gray)
                     .cornerRadius(10)
+                    .disabled(!viewModel.shouldEmailButtonBeEnabled)
             }
+            .padding(.horizontal)
             
             
           

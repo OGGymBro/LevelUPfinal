@@ -29,10 +29,10 @@ class LoginViewModel: ObservableObject {
     
 }
 
-extension String {
-    func isValidEmail() -> Bool {
-        // Your email validation logic here
-        // Example: return true if email is valid, false otherwise
-        return self.contains("@") && self.contains(".")
-    }
-}
+//extension String {
+//    func isValidEmail() -> Bool {
+//        // Your email validation logic here
+//        // Example: return true if email is valid, false otherwise
+//        return self.contains("@") && self.contains(".")
+//    }
+//}

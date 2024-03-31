@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF241DED2BB9BF2300B892DB /* CoachTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF241DEC2BB9BF2300B892DB /* CoachTabView.swift */; };
+		AF241DEF2BB9D62800B892DB /* String + validEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF241DEE2BB9D62800B892DB /* String + validEmail.swift */; };
 		AF383AEC2BB1E9FD00EB7833 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AF383AEB2BB1E9FD00EB7833 /* Lottie */; };
 		AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */; };
 		AF383AF02BB1EB4900EB7833 /* gym11.json in Resources */ = {isa = PBXBuildFile; fileRef = AF383AEF2BB1EB4800EB7833 /* gym11.json */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		AF241DEC2BB9BF2300B892DB /* CoachTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTabView.swift; sourceTree = "<group>"; };
+		AF241DEE2BB9D62800B892DB /* String + validEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + validEmail.swift"; sourceTree = "<group>"; };
 		AF383AED2BB1EAB100EB7833 /* LottieLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoader.swift; sourceTree = "<group>"; };
 		AF383AEF2BB1EB4800EB7833 /* gym11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gym11.json; sourceTree = "<group>"; };
 		AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 		AF8C6C5D2BB12E2900C47306 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				AF241DEE2BB9D62800B892DB /* String + validEmail.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */,
 				AF8C6C7C2BB12FD900C47306 /* ProfileView.swift in Sources */,
 				AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */,
+				AF241DEF2BB9D62800B892DB /* String + validEmail.swift in Sources */,
 				AF8C6C7E2BB12FE800C47306 /* CurrentUserProfileView.swift in Sources */,
 				AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */,
 				AF8C6C882BB130B100C47306 /* UploadPostViewModel.swift in Sources */,
