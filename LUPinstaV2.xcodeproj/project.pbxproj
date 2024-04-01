@@ -47,6 +47,9 @@
 		AF8C6C932BB1336F00C47306 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C922BB1336F00C47306 /* FirebaseFirestore */; };
 		AF8C6C952BB1336F00C47306 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C942BB1336F00C47306 /* FirebaseFirestoreSwift */; };
 		AF8C6C972BB1336F00C47306 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C962BB1336F00C47306 /* FirebaseStorage */; };
+		AFA08D752BBB13E800F62DEE /* ButtonStylePressed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */; };
+		AFA08D792BBB150B00F62DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA08D772BBB150B00F62DEE /* Assets.xcassets */; };
+		AFA08D7B2BBB156E00F62DEE /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */; };
 		AFCBE7832BB13B7E00072EA3 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCBE7822BB13B7E00072EA3 /* ContentViewModel.swift */; };
 		AFCBE7852BB13BC900072EA3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCBE7842BB13BC900072EA3 /* AuthService.swift */; };
 		AFCBE7872BB13C4C00072EA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */; };
@@ -96,6 +99,9 @@
 		AF8C6C892BB130CA00C47306 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF8C6C8B2BB130E000C47306 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSession.swift; sourceTree = "<group>"; };
+		AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylePressed.swift; sourceTree = "<group>"; };
+		AFA08D772BBB150B00F62DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		AFCBE7822BB13B7E00072EA3 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		AFCBE7842BB13BC900072EA3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -301,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				AF241DEE2BB9D62800B892DB /* String + validEmail.swift */,
+				AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -386,6 +393,8 @@
 				AF8C6C6D2BB12F5400C47306 /* CreatePasswordView.swift */,
 				AFF37B162BB1903400D679D5 /* RoleChoice.swift */,
 				AF8C6C6F2BB12F6600C47306 /* CompleteSignUpView.swift */,
+				AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */,
+				AFA08D772BBB150B00F62DEE /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -517,6 +526,8 @@
 				AF383AF02BB1EB4900EB7833 /* gym11.json in Resources */,
 				AFCBE7872BB13C4C00072EA3 /* GoogleService-Info.plist in Resources */,
 				AFF37B0F2BB143C200D679D5 /* assets.xcassets in Resources */,
+				AFA08D7B2BBB156E00F62DEE /* MyParticle.sks in Resources */,
+				AFA08D792BBB150B00F62DEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +559,7 @@
 				AF8C6C8E2BB130F000C47306 /* ExerciseSession.swift in Sources */,
 				AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */,
 				AFCBE7832BB13B7E00072EA3 /* ContentViewModel.swift in Sources */,
+				AFA08D752BBB13E800F62DEE /* ButtonStylePressed.swift in Sources */,
 				AF8C6C7A2BB12FC500C47306 /* FeedCell.swift in Sources */,
 				AF241DED2BB9BF2300B892DB /* CoachTabView.swift in Sources */,
 				AF8C6C8C2BB130E000C47306 /* Post.swift in Sources */,
