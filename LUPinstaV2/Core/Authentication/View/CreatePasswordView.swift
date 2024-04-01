@@ -79,9 +79,9 @@ struct CreatePasswordView: View {
                     .frame(height: 44)
                     .background(viewModel.shouldPasswordButtonBeEnabled ? .green : .gray)
                     .cornerRadius(10)
-                    .disabled(!viewModel.shouldPasswordButtonBeEnabled)
             }
             .padding(.horizontal)
+            .disabled(!viewModel.shouldPasswordButtonBeEnabled)
             
             
             Spacer()

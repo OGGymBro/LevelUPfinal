@@ -41,9 +41,9 @@ struct AddEmailView: View {
                     .frame(height: 44)
                     .background(viewModel.shouldEmailButtonBeEnabled ? .green : .gray)
                     .cornerRadius(10)
-                    .disabled(!viewModel.shouldEmailButtonBeEnabled)
             }
             .padding(.horizontal)
+            .disabled(!viewModel.shouldEmailButtonBeEnabled)
             
             
           

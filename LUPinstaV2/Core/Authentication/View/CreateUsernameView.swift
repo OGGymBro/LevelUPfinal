@@ -41,9 +41,9 @@ struct CreateUsernameView: View {
                     .frame(height: 44)
                     .background(viewModel.shouldUsernameButtonBeEnabled ? .green : .gray)
                     .cornerRadius(10)
-                    .disabled(!viewModel.shouldUsernameButtonBeEnabled)
             }
             .padding(.horizontal)
+            .disabled(!viewModel.shouldUsernameButtonBeEnabled)
 
             Spacer()
             
