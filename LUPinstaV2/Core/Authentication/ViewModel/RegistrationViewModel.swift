@@ -10,7 +10,8 @@ import Foundation
 @MainActor
 class RegistrationViewModel: ObservableObject {
     @Published var email = ""
-    @Published var password = ""
+    @Published var password1 = ""
+    @Published var password2 = ""
     @Published var username = ""
     @Published var role = ""
     
@@ -33,12 +34,17 @@ class RegistrationViewModel: ObservableObject {
     //password
     var shouldPasswordButtonBeEnabled: Bool {
         // Check if the password contains at least one number, one lowercase letter, one uppercase letter, and one special character
-        let containsNumber = password.contains { $0.isNumber }
-        let containsLowercaseLetter = password.contains { $0.isLowercase }
-        let containsUppercaseLetter = password.contains { $0.isUppercase }
-        let containsSpecialCharacter = password.rangeOfCharacter(from: .punctuationCharacters) != nil
+        let containsNumber = password1.contains { $0.isNumber }
+        let containsLowercaseLetter = password1.contains { $0.isLowercase }
+        let containsUppercaseLetter = password1.contains { $0.isUppercase }
+        let containsSpecialCharacter = password1.rangeOfCharacter(from: .punctuationCharacters) != nil
         
-        return password.count >= 8 && containsNumber && containsLowercaseLetter && containsUppercaseLetter && containsSpecialCharacter
+        return password1.count >= 8 &&
+                containsNumber &&
+                containsLowercaseLetter &&
+                containsUppercaseLetter &&
+                containsSpecialCharacter &&
+                (password1 == password2)
     }
     
     var shouldRoleButtonBeEnabled: Bool {
@@ -54,34 +60,34 @@ class RegistrationViewModel: ObservableObject {
     
     func createUser() async throws {
         try await AuthService.shared.createUser(withEmail: email,
-                                                password: password,
+                                                password: password1,
                                                 username: username,
                                                 role: role)
         email = ""
-        password = ""
+        password1 = ""
         username = ""
         role = ""
     }
     
     //password individual check
     var passwordHasGoodLength:Bool {
-        return password.count >= 8
+        return password1.count >= 8
     }
 
     var passwordHasLowercase:Bool {
-        return password.contains { $0.isLowercase }
+        return password1.contains { $0.isLowercase }
     }
     
     var passwordHasUppercase:Bool {
-        return password.contains { $0.isUppercase }
+        return password1.contains { $0.isUppercase }
     }
     
     var passwordHasNumbers:Bool {
-        return password.contains { $0.isNumber }
+        return password1.contains { $0.isNumber }
     }
     
     var passwordHasSpecialCharacters:Bool {
-        return password.rangeOfCharacter(from: .punctuationCharacters) != nil
+        return password1.rangeOfCharacter(from: .punctuationCharacters) != nil
     }
     
 }

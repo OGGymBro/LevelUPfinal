@@ -57,10 +57,15 @@ struct CreatePasswordView: View {
                 .foregroundStyle(.green)
                 
             
-            SecureField("Enter your password", text: $viewModel.password)
+            SecureField("Enter your password", text: $viewModel.password1)
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .modifier(LUPTextFieldModifier())
                 .padding(.top,24)
+            
+            SecureField("Confirm your password", text: $viewModel.password2)
+                .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                .modifier(LUPTextFieldModifier())
+//                .padding(.top,24)
             
             NavigationLink{
                 RoleChoice()
