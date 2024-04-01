@@ -94,13 +94,14 @@ class ParticleScene: SKScene {
         backgroundColor = .clear
 
         if let emitter1 = SKEmitterNode(fileNamed: "MyParticle") {
+            emitter1.position.x = size.width / 2
             emitter1.position.y = size.height
             emitter1.particleColorSequence = nil
             emitter1.particleColorBlendFactor = 1
             emitter1.particleColorBlueRange = 1
             emitter1.particleColorGreenRange = 1
             emitter1.particleColorRedRange = 1
-            emitter1.position.x = size.width
+//            emitter1.position.x = size.width
             addChild(emitter1)
         }
     }
