@@ -107,6 +107,12 @@ struct LoginView: View {
                     }
                     .font(.callout)
                     .padding(.vertical)
+                    
+                    HStack{
+                        Text("© 2024 LevelUP Fitness")
+                            .font(.footnote)
+                            .foregroundColor(.gray)
+                    }
                 }
                 
                 if isLoading {
