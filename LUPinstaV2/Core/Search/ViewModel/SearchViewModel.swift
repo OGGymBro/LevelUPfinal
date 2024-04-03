@@ -26,4 +26,14 @@ class SearchViewModel:ObservableObject {
     func fetchAllTrainers() async throws {
         self.users = try await UserService.fetchAllTrainers()
     }
+    
+    @MainActor
+       func refreshUsers() async {
+           do {
+               self.users = try await UserService.fetchAllTrainers()
+           } catch {
+               // Handle error
+               print("Error refreshing users: \(error)")
+           }
+       }
 }

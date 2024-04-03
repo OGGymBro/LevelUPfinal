@@ -46,7 +46,11 @@ struct SearchView: View {
                 }
                 .padding(.top,8)
                 .searchable(text: $searchText,prompt: "Search for Mentors")
+                            }
+            .refreshable {
+                await viewModel.refreshUsers()
             }
+
             .navigationTitle("Find Mentors")
             .navigationDestination(for: User.self,
                                    destination: { user in
