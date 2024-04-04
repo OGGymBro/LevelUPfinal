@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct SearchView: View {
-    @State private var searchText = ""
+    //@State private var searchText = ""
     @StateObject var viewModel = SearchViewModel()
     
     var body: some View {
         NavigationStack {
             ScrollView{
                 LazyVStack(spacing: 12){
-                    ForEach(viewModel.users) { user in
+                    ForEach(viewModel.filteredUsers) { user in
                         
                         NavigationLink(value: user) {
                             //
@@ -45,17 +45,18 @@ struct SearchView: View {
                     }
                 }
                 .padding(.top,8)
-                .searchable(text: $searchText,prompt: "Search for Mentors")
-                            }
+                .searchable(text: $viewModel.searchTerm,
+                            prompt: "Search for Mentors")
+            }
             .refreshable {
                 await viewModel.refreshUsers()
             }
-
+            
             .navigationTitle("Find Mentors")
             .navigationDestination(for: User.self,
                                    destination: { user in
                 ProfileView(user: user)
-                                                 })
+            })
             //.navigationBarTitleDisplayMode(.inline)
             
         }

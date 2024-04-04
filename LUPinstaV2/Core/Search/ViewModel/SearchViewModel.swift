@@ -10,6 +10,17 @@ import Foundation
 class SearchViewModel:ObservableObject {
     @Published var users = [User]()
     
+    @Published var searchTerm = ""
+    
+    var filteredUsers: [User] {
+        
+        guard !searchTerm.isEmpty else {return users}
+        // fullname based search
+//        return users.filter({$0.username.localizedCaseInsensitiveContains(searchTerm) ?? true})
+        //username based search
+          return users.filter({$0.username.localizedCaseInsensitiveContains(searchTerm)})
+    }
+    
     init() {
         Task {
             //try await fetchAllUsers()
