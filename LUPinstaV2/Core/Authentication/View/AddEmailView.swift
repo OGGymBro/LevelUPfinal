@@ -26,6 +26,7 @@ struct AddEmailView: View {
                 .padding(.bottom,24)
             
             TextField("Enter your email", text: $viewModel.email)
+                .keyboardType(.emailAddress)
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .modifier(LUPTextFieldModifier())
             

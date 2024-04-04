@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 @MainActor
 class RegistrationViewModel: ObservableObject {
@@ -14,6 +15,9 @@ class RegistrationViewModel: ObservableObject {
     @Published var password2 = ""
     @Published var username = ""
     @Published var role = ""
+    
+    //to check username availability
+    @Published  var isUsernameAvailable: Bool = true
     
     //email
     var isEmailValid: Bool {
@@ -28,6 +32,22 @@ class RegistrationViewModel: ObservableObject {
     //username
     var shouldUsernameButtonBeEnabled: Bool {
         return username.count >= 3
+    }
+    
+    func checkUsernameAvailability() {
+        // Query Firebase to check if username exists
+        let db = Firestore.firestore()
+        db.collection("users")
+            .whereField("username", isEqualTo: username)
+            .getDocuments { (querySnapshot, error) in
+            guard let documents = querySnapshot?.documents else {
+                print("Error fetching documents: \(error!)")
+                return
+            }
+            
+            // If there are no documents, the username is available
+            self.isUsernameAvailable = documents.isEmpty
+        }
     }
     
     
