@@ -28,8 +28,12 @@ struct CreateUsernameView: View {
             TextField("Enter your username", text: $viewModel.username)
                 .autocapitalization(.none)
                 .modifier(LUPTextFieldModifier())
-                .onChange(of: viewModel.username) { _ in
+//                .onChange(of: viewModel.username) { _ in                //deprication fixed below
+//                    viewModel.checkUsernameAvailability()
+//                }
+                .onChange(of: viewModel.username) { oldState, newState in
                     viewModel.checkUsernameAvailability()
+                    
                 }
 //                .background(
 //                    RoundedRectangle(cornerRadius: 8)
