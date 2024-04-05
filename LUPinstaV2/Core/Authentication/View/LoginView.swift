@@ -19,14 +19,23 @@ struct LoginView: View {
                     
                     Image("Applogo")
                         .resizable()
-                        .frame(width: 150,height: 150)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 150, height: 150)
                         .clipShape(Circle())
-                        .padding(.bottom,25)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.white, lineWidth: 4)
+                                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
+                        )
+                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
+                        .padding(.bottom, 25)
+
                     
                     VStack{
                         TextField("Enter your email", text: $viewModel.email)
                             .autocapitalization(.none)
                             .modifier(LUPTextFieldModifier())
+                            .keyboardType(.emailAddress)
                         
                         SecureField("Enter your password", text: $viewModel.password)
                             .modifier(LUPTextFieldModifier())
@@ -113,6 +122,18 @@ struct LoginView: View {
                             .font(.footnote)
                             .foregroundColor(.gray)
                     }
+                    
+                    HStack{
+                        
+                        Text("App Version:")
+                            .font(.subheadline)
+                            .foregroundStyle(.gray)
+                        Text("\(appVersion) (\(buildNumber))")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        
+                    }
                 }
                 
                 if isLoading {
@@ -125,6 +146,7 @@ struct LoginView: View {
         }
     }
 }
+
 
 
 #Preview {
