@@ -48,6 +48,7 @@
 		AF8C6C932BB1336F00C47306 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C922BB1336F00C47306 /* FirebaseFirestore */; };
 		AF8C6C952BB1336F00C47306 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C942BB1336F00C47306 /* FirebaseFirestoreSwift */; };
 		AF8C6C972BB1336F00C47306 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C962BB1336F00C47306 /* FirebaseStorage */; };
+		AF9B63A02BC3066A001209BA /* MainMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B639F2BC3066A001209BA /* MainMessagesView.swift */; };
 		AFA08D752BBB13E800F62DEE /* ButtonStylePressed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */; };
 		AFA08D792BBB150B00F62DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA08D772BBB150B00F62DEE /* Assets.xcassets */; };
 		AFA08D7B2BBB156E00F62DEE /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */; };
@@ -101,6 +102,7 @@
 		AF8C6C892BB130CA00C47306 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF8C6C8B2BB130E000C47306 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSession.swift; sourceTree = "<group>"; };
+		AF9B639F2BC3066A001209BA /* MainMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessagesView.swift; sourceTree = "<group>"; };
 		AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylePressed.swift; sourceTree = "<group>"; };
 		AFA08D772BBB150B00F62DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
@@ -246,9 +248,10 @@
 				AF8C6C5C2BB12E1F00C47306 /* Model */,
 				AFF37B1E2BB1C11B00D679D5 /* Services */,
 				AF8C6C512BB12D5D00C47306 /* Preview Content */,
-				AF50CB312BB5BFC900E86754 /* Coach App */,
 				AF383AEF2BB1EB4800EB7833 /* gym11.json */,
+				AF50CB312BB5BFC900E86754 /* Coach App */,
 				AFF37B0E2BB143C200D679D5 /* assets.xcassets */,
+				AF9B639B2BC305E7001209BA /* Messaging */,
 				AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */,
 			);
 			path = LUPinstaV2;
@@ -385,6 +388,14 @@
 				AF6ACB6D2BB47C5F002FBB00 /* ViewModel */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		AF9B639B2BC305E7001209BA /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				AF9B639F2BC3066A001209BA /* MainMessagesView.swift */,
+			);
+			path = Messaging;
 			sourceTree = "<group>";
 		};
 		AFF37B102BB14EE500D679D5 /* View */ = {
@@ -570,6 +581,7 @@
 				AF8C6C842BB1309000C47306 /* TraineeTabView.swift in Sources */,
 				AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */,
 				AF6ACB6F2BB47C87002FBB00 /* PostGridViewModel.swift in Sources */,
+				AF9B63A02BC3066A001209BA /* MainMessagesView.swift in Sources */,
 				AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */,
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
