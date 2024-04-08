@@ -49,6 +49,9 @@
 		AF8C6C952BB1336F00C47306 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C942BB1336F00C47306 /* FirebaseFirestoreSwift */; };
 		AF8C6C972BB1336F00C47306 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C962BB1336F00C47306 /* FirebaseStorage */; };
 		AF9B63A02BC3066A001209BA /* MainMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B639F2BC3066A001209BA /* MainMessagesView.swift */; };
+		AF9B63A72BC3DC53001209BA /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B63A42BC3DC53001209BA /* ChatUser.swift */; };
+		AF9B63A82BC3DC53001209BA /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B63A52BC3DC53001209BA /* ChatMessage.swift */; };
+		AF9B63A92BC3DC53001209BA /* RecentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B63A62BC3DC53001209BA /* RecentMessage.swift */; };
 		AFA08D752BBB13E800F62DEE /* ButtonStylePressed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */; };
 		AFA08D792BBB150B00F62DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA08D772BBB150B00F62DEE /* Assets.xcassets */; };
 		AFA08D7B2BBB156E00F62DEE /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */; };
@@ -103,6 +106,9 @@
 		AF8C6C8B2BB130E000C47306 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSession.swift; sourceTree = "<group>"; };
 		AF9B639F2BC3066A001209BA /* MainMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessagesView.swift; sourceTree = "<group>"; };
+		AF9B63A42BC3DC53001209BA /* ChatUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		AF9B63A52BC3DC53001209BA /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		AF9B63A62BC3DC53001209BA /* RecentMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentMessage.swift; sourceTree = "<group>"; };
 		AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylePressed.swift; sourceTree = "<group>"; };
 		AFA08D772BBB150B00F62DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
@@ -393,9 +399,28 @@
 		AF9B639B2BC305E7001209BA /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
-				AF9B639F2BC3066A001209BA /* MainMessagesView.swift */,
+				AF9B63A32BC3DC39001209BA /* Models */,
+				AF9B63AA2BC3DC71001209BA /* View */,
 			);
 			path = Messaging;
+			sourceTree = "<group>";
+		};
+		AF9B63A32BC3DC39001209BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF9B63A52BC3DC53001209BA /* ChatMessage.swift */,
+				AF9B63A42BC3DC53001209BA /* ChatUser.swift */,
+				AF9B63A62BC3DC53001209BA /* RecentMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF9B63AA2BC3DC71001209BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF9B639F2BC3066A001209BA /* MainMessagesView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AFF37B102BB14EE500D679D5 /* View */ = {
@@ -555,10 +580,12 @@
 				AF6ACB692BB46DB2002FBB00 /* FeedViewModel.swift in Sources */,
 				AFF37B172BB1903400D679D5 /* RoleChoice.swift in Sources */,
 				AF6ACB632BB40ABD002FBB00 /* CircularProfileImageView.swift in Sources */,
+				AF9B63A92BC3DC53001209BA /* RecentMessage.swift in Sources */,
 				AFF37B1D2BB1B2E100D679D5 /* ExerciseVideoPost.swift in Sources */,
 				AF8C6C702BB12F6600C47306 /* CompleteSignUpView.swift in Sources */,
 				AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */,
 				AF8C6C7C2BB12FD900C47306 /* ProfileView.swift in Sources */,
+				AF9B63A82BC3DC53001209BA /* ChatMessage.swift in Sources */,
 				AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */,
 				AF241DEF2BB9D62800B892DB /* String + validEmail.swift in Sources */,
 				AF8C6C7E2BB12FE800C47306 /* CurrentUserProfileView.swift in Sources */,
@@ -591,6 +618,7 @@
 				AFF37B242BB1C29500D679D5 /* SearchViewModel.swift in Sources */,
 				AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */,
 				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
+				AF9B63A72BC3DC53001209BA /* ChatUser.swift in Sources */,
 				AF6ACB6B2BB4780A002FBB00 /* PostService.swift in Sources */,
 				AFF37B202BB1C14200D679D5 /* UserService.swift in Sources */,
 				AFF37B1B2BB1B2C800D679D5 /* ForumPost.swift in Sources */,

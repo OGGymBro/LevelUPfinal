@@ -37,7 +37,7 @@ struct TraineeTabView: View {
                     Image(systemName: "plus.square")
                 }.tag(2)
             
-            Text("Mentorsip Chats")
+            MainMessagesView()
                 .onAppear{
                     selectedIndex = 3
                 }
