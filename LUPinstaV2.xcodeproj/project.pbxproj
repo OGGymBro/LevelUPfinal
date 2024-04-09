@@ -164,6 +164,7 @@
 		AF50CB312BB5BFC900E86754 /* Coach App */ = {
 			isa = PBXGroup;
 			children = (
+				AF9B63AB2BC59CEB001209BA /* CoachProfile */,
 				AF50CB322BB5C00F00E86754 /* CoachTabBar */,
 			);
 			path = "Coach App";
@@ -421,6 +422,29 @@
 				AF9B639F2BC3066A001209BA /* MainMessagesView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AF9B63AB2BC59CEB001209BA /* CoachProfile */ = {
+			isa = PBXGroup;
+			children = (
+				AF9B63AD2BC59D04001209BA /* ViewModel */,
+				AF9B63AC2BC59CFC001209BA /* View */,
+			);
+			path = CoachProfile;
+			sourceTree = "<group>";
+		};
+		AF9B63AC2BC59CFC001209BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF9B63AD2BC59D04001209BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AFF37B102BB14EE500D679D5 /* View */ = {
