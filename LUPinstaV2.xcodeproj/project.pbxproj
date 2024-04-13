@@ -48,10 +48,11 @@
 		AF8C6C932BB1336F00C47306 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C922BB1336F00C47306 /* FirebaseFirestore */; };
 		AF8C6C952BB1336F00C47306 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C942BB1336F00C47306 /* FirebaseFirestoreSwift */; };
 		AF8C6C972BB1336F00C47306 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C6C962BB1336F00C47306 /* FirebaseStorage */; };
-		AF9B63A02BC3066A001209BA /* MainMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B639F2BC3066A001209BA /* MainMessagesView.swift */; };
 		AF9B63A72BC3DC53001209BA /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B63A42BC3DC53001209BA /* ChatUser.swift */; };
 		AF9B63A82BC3DC53001209BA /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B63A52BC3DC53001209BA /* ChatMessage.swift */; };
 		AF9B63A92BC3DC53001209BA /* RecentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B63A62BC3DC53001209BA /* RecentMessage.swift */; };
+		AF9B63FF2BCA920C001209BA /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B63FE2BCA920C001209BA /* FirebaseManager.swift */; };
+		AF9B64012BCA921F001209BA /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B64002BCA921F001209BA /* FirebaseConstants.swift */; };
 		AFA08D752BBB13E800F62DEE /* ButtonStylePressed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */; };
 		AFA08D792BBB150B00F62DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA08D772BBB150B00F62DEE /* Assets.xcassets */; };
 		AFA08D7B2BBB156E00F62DEE /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */; };
@@ -105,10 +106,11 @@
 		AF8C6C892BB130CA00C47306 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF8C6C8B2BB130E000C47306 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF8C6C8D2BB130F000C47306 /* ExerciseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSession.swift; sourceTree = "<group>"; };
-		AF9B639F2BC3066A001209BA /* MainMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessagesView.swift; sourceTree = "<group>"; };
 		AF9B63A42BC3DC53001209BA /* ChatUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
 		AF9B63A52BC3DC53001209BA /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		AF9B63A62BC3DC53001209BA /* RecentMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentMessage.swift; sourceTree = "<group>"; };
+		AF9B63FE2BCA920C001209BA /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		AF9B64002BCA921F001209BA /* FirebaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
 		AFA08D742BBB13E800F62DEE /* ButtonStylePressed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylePressed.swift; sourceTree = "<group>"; };
 		AFA08D772BBB150B00F62DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA08D7A2BBB156E00F62DEE /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
@@ -258,8 +260,8 @@
 				AF383AEF2BB1EB4800EB7833 /* gym11.json */,
 				AF50CB312BB5BFC900E86754 /* Coach App */,
 				AFF37B0E2BB143C200D679D5 /* assets.xcassets */,
-				AF9B639B2BC305E7001209BA /* Messaging */,
 				AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */,
+				AF9B639B2BC305E7001209BA /* Messaging */,
 			);
 			path = LUPinstaV2;
 			sourceTree = "<group>";
@@ -400,8 +402,8 @@
 		AF9B639B2BC305E7001209BA /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				AF9B63FD2BCA91F8001209BA /* Utils */,
 				AF9B63A32BC3DC39001209BA /* Models */,
-				AF9B63AA2BC3DC71001209BA /* View */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -414,14 +416,6 @@
 				AF9B63A62BC3DC53001209BA /* RecentMessage.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		AF9B63AA2BC3DC71001209BA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AF9B639F2BC3066A001209BA /* MainMessagesView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		AF9B63AB2BC59CEB001209BA /* CoachProfile */ = {
@@ -445,6 +439,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF9B63FD2BCA91F8001209BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AF9B63FE2BCA920C001209BA /* FirebaseManager.swift */,
+				AF9B64002BCA921F001209BA /* FirebaseConstants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		AFF37B102BB14EE500D679D5 /* View */ = {
@@ -632,8 +635,8 @@
 				AF8C6C842BB1309000C47306 /* TraineeTabView.swift in Sources */,
 				AF8C6C6E2BB12F5400C47306 /* CreatePasswordView.swift in Sources */,
 				AF6ACB6F2BB47C87002FBB00 /* PostGridViewModel.swift in Sources */,
-				AF9B63A02BC3066A001209BA /* MainMessagesView.swift in Sources */,
 				AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */,
+				AF9B64012BCA921F001209BA /* FirebaseConstants.swift in Sources */,
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
 				AF24EADA2BC06C53000E8838 /* appVersionGetter.swift in Sources */,
@@ -644,6 +647,7 @@
 				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
 				AF9B63A72BC3DC53001209BA /* ChatUser.swift in Sources */,
 				AF6ACB6B2BB4780A002FBB00 /* PostService.swift in Sources */,
+				AF9B63FF2BCA920C001209BA /* FirebaseManager.swift in Sources */,
 				AFF37B202BB1C14200D679D5 /* UserService.swift in Sources */,
 				AFF37B1B2BB1B2C800D679D5 /* ForumPost.swift in Sources */,
 				AF8C6C762BB12FAB00C47306 /* PostGridView.swift in Sources */,

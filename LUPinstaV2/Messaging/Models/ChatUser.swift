@@ -11,3 +11,6 @@ struct ChatUser: Codable, Identifiable {
     @DocumentID var id: String?
     let uid, email, profileImageUrl: String
 }
+
+
+//modify this as per LUP requrements
