@@ -37,7 +37,8 @@ struct TraineeTabView: View {
                     Image(systemName: "plus.square")
                 }.tag(2)
             
-            MainMessagesView()
+            //MainMessagesView(user: user)
+            Text("message")
                 .onAppear{
                     selectedIndex = 3
                 }
@@ -51,9 +52,17 @@ struct TraineeTabView: View {
                 }
                 .tabItem {
                     Image(systemName: "person")
+                    Text("Profile")
                 }.tag(4)
             
-            
+            Text("extra feature")
+                .onAppear{
+                    selectedIndex = 5
+                }
+                .tabItem {
+                    Image(systemName: "graduationcap.fill")
+                    Text("Extra feature")
+                }.tag(5)
             
 
         }
