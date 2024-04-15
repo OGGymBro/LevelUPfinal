@@ -12,6 +12,9 @@ struct TraineeTabView: View {
     
     @State private var selectedIndex = 0
     var body: some View {
+        
+        //@State  var animateSearch = false
+        
         TabView(selection: $selectedIndex){
             FeedView()
                 .onAppear{
@@ -26,7 +29,15 @@ struct TraineeTabView: View {
                     selectedIndex = 1
                 }
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
+                    VStack {
+                        Image(systemName: "magnifyingglass")
+//                            .symbolEffect(.bounce.up.byLayer,
+//                                          value: animateSearch)
+                    }
+//                    .onTapGesture {
+//                        animateSearch.toggle()
+//                    }
+                        
                 }.tag(1)
             
             UploadPostView(tabIndex: $selectedIndex)
@@ -38,7 +49,7 @@ struct TraineeTabView: View {
                 }.tag(2)
             
             //MainMessagesView(user: user)
-            Text("message")
+            MainMessagesView()
                 .onAppear{
                     selectedIndex = 3
                 }
@@ -61,6 +72,7 @@ struct TraineeTabView: View {
                 }
                 .tabItem {
                     Image(systemName: "graduationcap.fill")
+                        
                     Text("Extra feature")
                 }.tag(5)
             

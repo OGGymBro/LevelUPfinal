@@ -15,6 +15,14 @@
 		AF383AF02BB1EB4900EB7833 /* gym11.json in Resources */ = {isa = PBXBuildFile; fileRef = AF383AEF2BB1EB4800EB7833 /* gym11.json */; };
 		AF4DB74B2BB3381D007D4D26 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */; };
 		AF4DB7512BB341CA007D4D26 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */; };
+		AF6944272BCD6935006A5B33 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944262BCD6935006A5B33 /* ImagePicker.swift */; };
+		AF69442A2BCD6990006A5B33 /* MainMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944292BCD6990006A5B33 /* MainMessageViewModel.swift */; };
+		AF69442C2BCD699A006A5B33 /* MainMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69442B2BCD699A006A5B33 /* MainMessageView.swift */; };
+		AF69442F2BCD69F4006A5B33 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF69442E2BCD69F4006A5B33 /* SDWebImageSwiftUI */; };
+		AF6944322BCD6AD7006A5B33 /* CreateNewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944312BCD6AD7006A5B33 /* CreateNewMessageViewModel.swift */; };
+		AF6944342BCD6AE2006A5B33 /* CreateNewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944332BCD6AE2006A5B33 /* CreateNewMessageView.swift */; };
+		AF6944372BCD6B0C006A5B33 /* ChatLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944362BCD6B0C006A5B33 /* ChatLogViewModel.swift */; };
+		AF6944392BCD6B1D006A5B33 /* ChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944382BCD6B1D006A5B33 /* ChatLogView.swift */; };
 		AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */; };
 		AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */; };
 		AF6ACB632BB40ABD002FBB00 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */; };
@@ -77,6 +85,13 @@
 		AF383AEF2BB1EB4800EB7833 /* gym11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gym11.json; sourceTree = "<group>"; };
 		AF4DB74A2BB3381D007D4D26 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		AF4DB7502BB341CA007D4D26 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		AF6944262BCD6935006A5B33 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		AF6944292BCD6990006A5B33 /* MainMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessageViewModel.swift; sourceTree = "<group>"; };
+		AF69442B2BCD699A006A5B33 /* MainMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessageView.swift; sourceTree = "<group>"; };
+		AF6944312BCD6AD7006A5B33 /* CreateNewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMessageViewModel.swift; sourceTree = "<group>"; };
+		AF6944332BCD6AE2006A5B33 /* CreateNewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMessageView.swift; sourceTree = "<group>"; };
+		AF6944362BCD6B0C006A5B33 /* ChatLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogViewModel.swift; sourceTree = "<group>"; };
+		AF6944382BCD6B1D006A5B33 /* ChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogView.swift; sourceTree = "<group>"; };
 		AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		AF6ACB682BB46DB2002FBB00 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
@@ -132,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF69442F2BCD69F4006A5B33 /* SDWebImageSwiftUI in Frameworks */,
 				AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */,
 				AF383AEC2BB1E9FD00EB7833 /* Lottie in Frameworks */,
 				AF8C6C912BB1336F00C47306 /* FirebaseAuth in Frameworks */,
@@ -178,6 +194,33 @@
 				AF241DEC2BB9BF2300B892DB /* CoachTabView.swift */,
 			);
 			path = CoachTabBar;
+			sourceTree = "<group>";
+		};
+		AF6944282BCD697C006A5B33 /* MainMessage */ = {
+			isa = PBXGroup;
+			children = (
+				AF6944292BCD6990006A5B33 /* MainMessageViewModel.swift */,
+				AF69442B2BCD699A006A5B33 /* MainMessageView.swift */,
+			);
+			path = MainMessage;
+			sourceTree = "<group>";
+		};
+		AF6944302BCD6AC0006A5B33 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				AF6944312BCD6AD7006A5B33 /* CreateNewMessageViewModel.swift */,
+				AF6944332BCD6AE2006A5B33 /* CreateNewMessageView.swift */,
+			);
+			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		AF6944352BCD6AFC006A5B33 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AF6944362BCD6B0C006A5B33 /* ChatLogViewModel.swift */,
+				AF6944382BCD6B1D006A5B33 /* ChatLogView.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		AF6ACB642BB41FAE002FBB00 /* ViewModel */ = {
@@ -402,6 +445,9 @@
 		AF9B639B2BC305E7001209BA /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				AF6944352BCD6AFC006A5B33 /* Chat */,
+				AF6944302BCD6AC0006A5B33 /* NewMessage */,
+				AF6944282BCD697C006A5B33 /* MainMessage */,
 				AF9B63FD2BCA91F8001209BA /* Utils */,
 				AF9B63A32BC3DC39001209BA /* Models */,
 			);
@@ -446,6 +492,7 @@
 			children = (
 				AF9B63FE2BCA920C001209BA /* FirebaseManager.swift */,
 				AF9B64002BCA921F001209BA /* FirebaseConstants.swift */,
+				AF6944262BCD6935006A5B33 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -540,6 +587,7 @@
 				AF8C6C962BB1336F00C47306 /* FirebaseStorage */,
 				AF383AEB2BB1E9FD00EB7833 /* Lottie */,
 				AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */,
+				AF69442E2BCD69F4006A5B33 /* SDWebImageSwiftUI */,
 			);
 			productName = LUPinstaV2;
 			productReference = AF8C6C482BB12D5C00C47306 /* LUPinstaV2.app */;
@@ -573,6 +621,7 @@
 				AF8C6C8F2BB1336F00C47306 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				AF383AEA2BB1E9FD00EB7833 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				AF6ACB0B2BB3DC1E002FBB00 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AF69442D2BCD69F4006A5B33 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = AF8C6C492BB12D5C00C47306 /* Products */;
 			projectDirPath = "";
@@ -621,15 +670,20 @@
 				AF8C6C6B2BB12F3700C47306 /* CreateUsernameView.swift in Sources */,
 				AF8C6C722BB12F7F00C47306 /* UserStatView.swift in Sources */,
 				AFF37B192BB1A19D00D679D5 /* LoginViewModel.swift in Sources */,
+				AF69442A2BCD6990006A5B33 /* MainMessageViewModel.swift in Sources */,
+				AF6944272BCD6935006A5B33 /* ImagePicker.swift in Sources */,
 				AF8C6C692BB12F2800C47306 /* AddEmailView.swift in Sources */,
 				AF8C6C8A2BB130CA00C47306 /* User.swift in Sources */,
 				AF8C6C862BB130A400C47306 /* UploadPostView.swift in Sources */,
 				AF8C6C8E2BB130F000C47306 /* ExerciseSession.swift in Sources */,
+				AF6944372BCD6B0C006A5B33 /* ChatLogViewModel.swift in Sources */,
 				AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */,
 				AFCBE7832BB13B7E00072EA3 /* ContentViewModel.swift in Sources */,
 				AFA08D752BBB13E800F62DEE /* ButtonStylePressed.swift in Sources */,
+				AF69442C2BCD699A006A5B33 /* MainMessageView.swift in Sources */,
 				AF8C6C7A2BB12FC500C47306 /* FeedCell.swift in Sources */,
 				AF241DED2BB9BF2300B892DB /* CoachTabView.swift in Sources */,
+				AF6944322BCD6AD7006A5B33 /* CreateNewMessageViewModel.swift in Sources */,
 				AF8C6C8C2BB130E000C47306 /* Post.swift in Sources */,
 				AFCBE7852BB13BC900072EA3 /* AuthService.swift in Sources */,
 				AF8C6C842BB1309000C47306 /* TraineeTabView.swift in Sources */,
@@ -638,12 +692,14 @@
 				AF383AEE2BB1EAB100EB7833 /* LottieLoader.swift in Sources */,
 				AF9B64012BCA921F001209BA /* FirebaseConstants.swift in Sources */,
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
+				AF6944342BCD6AE2006A5B33 /* CreateNewMessageView.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
 				AF24EADA2BC06C53000E8838 /* appVersionGetter.swift in Sources */,
 				AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */,
 				AF4DB7512BB341CA007D4D26 /* EditProfileViewModel.swift in Sources */,
 				AFF37B242BB1C29500D679D5 /* SearchViewModel.swift in Sources */,
 				AF8C6C822BB1301600C47306 /* SearchView.swift in Sources */,
+				AF6944392BCD6B1D006A5B33 /* ChatLogView.swift in Sources */,
 				AF8C6C742BB12F9700C47306 /* LUPTextFieldModifier.swift in Sources */,
 				AF9B63A72BC3DC53001209BA /* ChatUser.swift in Sources */,
 				AF6ACB6B2BB4780A002FBB00 /* PostService.swift in Sources */,
@@ -869,6 +925,14 @@
 				minimumVersion = 4.4.1;
 			};
 		};
+		AF69442D2BCD69F4006A5B33 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
 		AF6ACB0B2BB3DC1E002FBB00 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -892,6 +956,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AF383AEA2BB1E9FD00EB7833 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		AF69442E2BCD69F4006A5B33 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF69442D2BCD69F4006A5B33 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 		AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

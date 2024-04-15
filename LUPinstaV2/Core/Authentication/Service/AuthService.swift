@@ -71,23 +71,34 @@ class AuthService{
         
     }
     
-    private func uploadUserData(uid:String, username:String, email:String, role:String) async {
-        let user = User(id: uid,
-                        email: email,
-                        role: role,
-                        username: username)
+    private func uploadUserData(uid: String, username: String, email: String, role: String) async {
+        // Create a user instance using the custom initializer
+        let userData: [String: Any] = [
+            "uid": uid,
+            "email": email,
+            "role": role,
+            "username": username
+        ]
+        let user = User(data: userData)
         
+        // Assign the user to the currentUser property
         self.currentUser = user
-        // encode the user before sending it to FB
-        //guard let cause it might fail
-        //ENCODE THE USER
-        guard let encodedUser = try? Firestore.Encoder().encode(user) else {return}
         
-        //set the data finally
-        try? await Firestore.firestore()
-            .collection("users") //which collection or table
-            .document(user.id)  //what document?
-            .setData(encodedUser)  //set this
+        // Encode the user before sending it to Firestore
+        guard let encodedUser = try? Firestore.Encoder().encode(user) else {
+            // Handle the encoding failure here
+            return
+        }
+        
+        // Set the user data in Firestore
+        do {
+            let userRef = Firestore.firestore().collection("users").document(user.id)
+            try await userRef.setData(encodedUser)
+        } catch {
+            // Handle the Firestore operation error here
+            print("Error setting user data in Firestore: \(error)")
+        }
     }
+
     
 }
