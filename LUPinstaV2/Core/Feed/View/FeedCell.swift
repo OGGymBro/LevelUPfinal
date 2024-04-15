@@ -39,42 +39,44 @@ struct FeedCell: View {
                 .clipShape(Rectangle())
             
             //action buttons
-            HStack(spacing:15){
-                Button{
-                    
-                } label: {
-                    Image(systemName: "heart")
-                        .imageScale(.large)
-                }
-                
-                Button{
-                    
-                } label: {
-                    Image(systemName: "bubble.right")
-                        .imageScale(.large)
-                }
-                
-                Button{
-                    
-                } label: {
-                    Image(systemName: "paperplane")
-                        .imageScale(.large)
-                }
-                
-                Spacer()
             
-            }
-            .padding(.leading,8)
-            .foregroundStyle(.green)
+//            HStack(spacing:15){
+//                Button{
+//                    
+//                } label: {
+//                    Image(systemName: "heart")
+//                        .imageScale(.large)
+//                }
+//                
+//                Button{
+//                    
+//                } label: {
+//                    Image(systemName: "bubble.right")
+//                        .imageScale(.large)
+//                }
+//                
+//                Button{
+//                    
+//                } label: {
+//                    Image(systemName: "paperplane")
+//                        .imageScale(.large)
+//                }
+//                
+//                Spacer()
+//            
+//            }
+//            .padding(.leading,8)
+//            .foregroundStyle(.green)
             
             //likes label
-            Text("\(post.likes) likes")
-                .font(.subheadline)
-                .fontWeight(.semibold)
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,alignment: .leading)
-                .padding(.leading,10)
-                .padding(.top,1)
             
+//            Text("\(post.likes) likes")
+//                .font(.subheadline)
+//                .fontWeight(.semibold)
+//                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,alignment: .leading)
+//                .padding(.leading,10)
+//                .padding(.top,1)
+//            
             
             //caption label
             HStack {
