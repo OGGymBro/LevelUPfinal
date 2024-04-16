@@ -38,8 +38,15 @@ struct CreateNewCoachMessageView: View {
                                 .overlay(RoundedRectangle(cornerRadius: 50)
                                             .stroke(Color(.label), lineWidth: 2)
                                 )
-                            Text(user.email)
-                                .foregroundColor(Color(.label))
+                            VStack (alignment :.leading) {
+                                Text(user.username)
+                                    .foregroundStyle(.green)
+                                
+                                Text(user.fullname ?? "")
+                                    .foregroundStyle(.gray)
+                            }
+                            .padding(.horizontal)
+                            
                             Spacer()
                         }.padding(.horizontal)
                     }
