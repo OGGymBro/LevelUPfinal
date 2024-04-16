@@ -23,6 +23,12 @@
 		AF6944342BCD6AE2006A5B33 /* CreateNewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944332BCD6AE2006A5B33 /* CreateNewMessageView.swift */; };
 		AF6944372BCD6B0C006A5B33 /* ChatLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944362BCD6B0C006A5B33 /* ChatLogViewModel.swift */; };
 		AF6944392BCD6B1D006A5B33 /* ChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944382BCD6B1D006A5B33 /* ChatLogView.swift */; };
+		AF69443F2BCE624D006A5B33 /* CoachMainMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69443E2BCE624D006A5B33 /* CoachMainMessageViewModel.swift */; };
+		AF6944412BCE6275006A5B33 /* CoachMainMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944402BCE6275006A5B33 /* CoachMainMessageView.swift */; };
+		AF6944432BCE62B9006A5B33 /* CreateNewCoachMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944422BCE62B9006A5B33 /* CreateNewCoachMessageViewModel.swift */; };
+		AF6944452BCE62C1006A5B33 /* CreateNewCoachMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944442BCE62C1006A5B33 /* CreateNewCoachMessageView.swift */; };
+		AF6944472BCE62F7006A5B33 /* CoachChatLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944462BCE62F7006A5B33 /* CoachChatLogViewModel.swift */; };
+		AF6944492BCE62FF006A5B33 /* CoachChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6944482BCE62FF006A5B33 /* CoachChatLogView.swift */; };
 		AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */; };
 		AF6ACB0D2BB3DC1E002FBB00 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF6ACB0C2BB3DC1E002FBB00 /* Kingfisher */; };
 		AF6ACB632BB40ABD002FBB00 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */; };
@@ -92,6 +98,12 @@
 		AF6944332BCD6AE2006A5B33 /* CreateNewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMessageView.swift; sourceTree = "<group>"; };
 		AF6944362BCD6B0C006A5B33 /* ChatLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogViewModel.swift; sourceTree = "<group>"; };
 		AF6944382BCD6B1D006A5B33 /* ChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogView.swift; sourceTree = "<group>"; };
+		AF69443E2BCE624D006A5B33 /* CoachMainMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachMainMessageViewModel.swift; sourceTree = "<group>"; };
+		AF6944402BCE6275006A5B33 /* CoachMainMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachMainMessageView.swift; sourceTree = "<group>"; };
+		AF6944422BCE62B9006A5B33 /* CreateNewCoachMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCoachMessageViewModel.swift; sourceTree = "<group>"; };
+		AF6944442BCE62C1006A5B33 /* CreateNewCoachMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCoachMessageView.swift; sourceTree = "<group>"; };
+		AF6944462BCE62F7006A5B33 /* CoachChatLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatLogViewModel.swift; sourceTree = "<group>"; };
+		AF6944482BCE62FF006A5B33 /* CoachChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatLogView.swift; sourceTree = "<group>"; };
 		AF6ACB092BB3D3C3002FBB00 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		AF6ACB622BB40ABD002FBB00 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		AF6ACB682BB46DB2002FBB00 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
@@ -223,6 +235,43 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		AF69443A2BCE6165006A5B33 /* CoachMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				AF69443B2BCE61C1006A5B33 /* CoachChat */,
+				AF69443C2BCE61CA006A5B33 /* CoachMainMessage */,
+				AF69443D2BCE61D9006A5B33 /* CoachNewMessage */,
+			);
+			path = CoachMessaging;
+			sourceTree = "<group>";
+		};
+		AF69443B2BCE61C1006A5B33 /* CoachChat */ = {
+			isa = PBXGroup;
+			children = (
+				AF6944462BCE62F7006A5B33 /* CoachChatLogViewModel.swift */,
+				AF6944482BCE62FF006A5B33 /* CoachChatLogView.swift */,
+			);
+			path = CoachChat;
+			sourceTree = "<group>";
+		};
+		AF69443C2BCE61CA006A5B33 /* CoachMainMessage */ = {
+			isa = PBXGroup;
+			children = (
+				AF69443E2BCE624D006A5B33 /* CoachMainMessageViewModel.swift */,
+				AF6944402BCE6275006A5B33 /* CoachMainMessageView.swift */,
+			);
+			path = CoachMainMessage;
+			sourceTree = "<group>";
+		};
+		AF69443D2BCE61D9006A5B33 /* CoachNewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				AF6944422BCE62B9006A5B33 /* CreateNewCoachMessageViewModel.swift */,
+				AF6944442BCE62C1006A5B33 /* CreateNewCoachMessageView.swift */,
+			);
+			path = CoachNewMessage;
+			sourceTree = "<group>";
+		};
 		AF6ACB642BB41FAE002FBB00 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,7 +353,10 @@
 				AF50CB312BB5BFC900E86754 /* Coach App */,
 				AFF37B0E2BB143C200D679D5 /* assets.xcassets */,
 				AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */,
+				AF69443A2BCE6165006A5B33 /* CoachMessaging */,
 				AF9B639B2BC305E7001209BA /* TraineeMessaging */,
+				AF9B63A32BC3DC39001209BA /* Models */,
+				AF9B63FD2BCA91F8001209BA /* Utils */,
 			);
 			path = LUPinstaV2;
 			sourceTree = "<group>";
@@ -446,10 +498,8 @@
 			isa = PBXGroup;
 			children = (
 				AF6944352BCD6AFC006A5B33 /* Chat */,
-				AF6944302BCD6AC0006A5B33 /* NewMessage */,
 				AF6944282BCD697C006A5B33 /* MainMessage */,
-				AF9B63FD2BCA91F8001209BA /* Utils */,
-				AF9B63A32BC3DC39001209BA /* Models */,
+				AF6944302BCD6AC0006A5B33 /* NewMessage */,
 			);
 			path = TraineeMessaging;
 			sourceTree = "<group>";
@@ -665,6 +715,7 @@
 				AF8C6C4E2BB12D5C00C47306 /* ContentView.swift in Sources */,
 				AF241DEF2BB9D62800B892DB /* String + validEmail.swift in Sources */,
 				AF8C6C7E2BB12FE800C47306 /* CurrentUserProfileView.swift in Sources */,
+				AF6944492BCE62FF006A5B33 /* CoachChatLogView.swift in Sources */,
 				AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */,
 				AF8C6C882BB130B100C47306 /* UploadPostViewModel.swift in Sources */,
 				AF8C6C6B2BB12F3700C47306 /* CreateUsernameView.swift in Sources */,
@@ -673,8 +724,10 @@
 				AF69442A2BCD6990006A5B33 /* MainMessageViewModel.swift in Sources */,
 				AF6944272BCD6935006A5B33 /* ImagePicker.swift in Sources */,
 				AF8C6C692BB12F2800C47306 /* AddEmailView.swift in Sources */,
+				AF6944452BCE62C1006A5B33 /* CreateNewCoachMessageView.swift in Sources */,
 				AF8C6C8A2BB130CA00C47306 /* User.swift in Sources */,
 				AF8C6C862BB130A400C47306 /* UploadPostView.swift in Sources */,
+				AF6944432BCE62B9006A5B33 /* CreateNewCoachMessageViewModel.swift in Sources */,
 				AF8C6C8E2BB130F000C47306 /* ExerciseSession.swift in Sources */,
 				AF6944372BCD6B0C006A5B33 /* ChatLogViewModel.swift in Sources */,
 				AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */,
@@ -693,6 +746,7 @@
 				AF9B64012BCA921F001209BA /* FirebaseConstants.swift in Sources */,
 				AF8C6C782BB12FBE00C47306 /* FeedView.swift in Sources */,
 				AF6944342BCD6AE2006A5B33 /* CreateNewMessageView.swift in Sources */,
+				AF6944472BCE62F7006A5B33 /* CoachChatLogViewModel.swift in Sources */,
 				AF8C6C4C2BB12D5C00C47306 /* LUPinstaV2App.swift in Sources */,
 				AF24EADA2BC06C53000E8838 /* appVersionGetter.swift in Sources */,
 				AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */,
@@ -705,8 +759,10 @@
 				AF6ACB6B2BB4780A002FBB00 /* PostService.swift in Sources */,
 				AF9B63FF2BCA920C001209BA /* FirebaseManager.swift in Sources */,
 				AFF37B202BB1C14200D679D5 /* UserService.swift in Sources */,
+				AF6944412BCE6275006A5B33 /* CoachMainMessageView.swift in Sources */,
 				AFF37B1B2BB1B2C800D679D5 /* ForumPost.swift in Sources */,
 				AF8C6C762BB12FAB00C47306 /* PostGridView.swift in Sources */,
+				AF69443F2BCE624D006A5B33 /* CoachMainMessageViewModel.swift in Sources */,
 				AF8C6C672BB12F1A00C47306 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

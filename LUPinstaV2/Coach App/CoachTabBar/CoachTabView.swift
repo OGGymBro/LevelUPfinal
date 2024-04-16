@@ -37,7 +37,7 @@ struct CoachTabView: View {
                     Image(systemName: "plus.square")
                 }.tag(2)
             
-            Text("Bookings")
+            CoachMainMessagesView()
                 .onAppear{
                     selectedIndex = 3
                 }
