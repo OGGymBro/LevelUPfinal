@@ -25,7 +25,7 @@ struct ChatLogView: View {
             Text(vm.errorMessage)
             messagesView
         }
-        .navigationTitle(vm.chatUser?.email ?? "user not passsed")
+        .navigationTitle(vm.chatUser?.username ?? "user not passsed")
         .navigationBarTitleDisplayMode(.inline)
         .onDisappear {
             vm.firestoreListener?.remove()
