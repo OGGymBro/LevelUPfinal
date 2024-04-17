@@ -71,13 +71,13 @@ struct CoachMainMessagesView: View {
             }
             
             Spacer()
-            Button {
-                shouldShowLogOutOptions.toggle()
-            } label: {
-                Image(systemName: "gear")
-                    .font(.system(size: 24, weight: .bold))
-                    .foregroundColor(Color(.label))
-            }
+//            Button {
+//                shouldShowLogOutOptions.toggle()
+//            } label: {
+//                Image(systemName: "gear")
+//                    .font(.system(size: 24, weight: .bold))
+//                    .foregroundColor(Color(.label))
+//            }
         }
         .padding()
         .actionSheet(isPresented: $shouldShowLogOutOptions) {
