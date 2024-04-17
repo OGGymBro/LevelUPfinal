@@ -126,7 +126,7 @@ class ChatLogViewModel: ObservableObject {
             FirebaseConstants.text: self.chatText,
             FirebaseConstants.fromId: uid,
             FirebaseConstants.toId: toId,
-            FirebaseConstants.profileImageUrl: chatUser.profileImageUrl,
+            FirebaseConstants.profileImageUrl: chatUser.profileImageUrl ?? "",
             FirebaseConstants.email: chatUser.email
         ] as [String : Any]
         
@@ -146,7 +146,7 @@ class ChatLogViewModel: ObservableObject {
             FirebaseConstants.text: self.chatText,
             FirebaseConstants.fromId: uid,
             FirebaseConstants.toId: toId,
-            FirebaseConstants.profileImageUrl: currentUser.profileImageUrl,
+            FirebaseConstants.profileImageUrl: currentUser.profileImageUrl ?? "",
             FirebaseConstants.email: currentUser.email
         ] as [String : Any]
         
