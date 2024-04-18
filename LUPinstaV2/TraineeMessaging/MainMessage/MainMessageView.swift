@@ -9,6 +9,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 import Firebase
 import FirebaseFirestoreSwift
+import Kingfisher
 
 
 struct MainMessagesView: View {
@@ -42,7 +43,9 @@ struct MainMessagesView: View {
     private var customNavBar: some View {
         HStack(spacing: 16) {
             
-            WebImage(url: URL(string: vm.chatUser?.profileImageUrl ?? ""))
+            //KFImage(URL(string: imageUrl))
+            //WebImage(url: URL(string: vm.chatUser?.profileImageUrl ?? ""))
+            KFImage(URL(string: vm.chatUser?.profileImageUrl ?? ""))
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
