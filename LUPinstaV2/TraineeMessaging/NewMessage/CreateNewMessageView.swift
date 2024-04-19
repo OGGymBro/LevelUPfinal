@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import Kingfisher
 
 
 
@@ -29,7 +30,9 @@ struct CreateNewMessageView: View {
                         didSelectNewUser(user)
                     } label: {
                         HStack(spacing: 16) {
-                            WebImage(url: URL(string: user.profileImageUrl ?? ""))
+                            //KFImage(URL(string: vm.chatUser?.profileImageUrl ?? ""))
+//                            WebImage(url: URL(string: user.profileImageUrl ?? ""))
+                            KFImage(URL(string: user.profileImageUrl ?? ""))
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 50, height: 50)
