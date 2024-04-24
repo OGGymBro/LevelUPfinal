@@ -70,13 +70,13 @@ struct RecipeBaseView: View {
                 VStack(alignment: .leading) {
                     // Non-Vegetarian Section
                     Text("Non-Vegetarian 🍗") // Section heading
-                        .font(.headline)
+                        .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .padding(.vertical, 5)
                         .padding(.horizontal, 10)
-                        .background(LinearGradient(gradient: Gradient(colors: [Color.orange, Color.red]), startPoint: .leading, endPoint: .trailing))
-                        .cornerRadius(8)
+//                        .background(LinearGradient(gradient: Gradient(colors: [Color.orange, Color.red]), startPoint: .leading, endPoint: .trailing))
+//                        .cornerRadius(8)
 
                     
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -98,13 +98,13 @@ struct RecipeBaseView: View {
                 VStack(alignment: .leading) {
                     // Vegetarian Section
                     Text("Vegetarian 🌱") // Section heading
-                        .font(.headline)
+                        .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .padding(.vertical, 5)
                         .padding(.horizontal, 10)
-                        .background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.yellow]), startPoint: .leading, endPoint: .trailing))
-                        .cornerRadius(8)
+//                        .background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.yellow]), startPoint: .leading, endPoint: .trailing))
+//                        .cornerRadius(8)
 
                     
                     ScrollView(.horizontal, showsIndicators: false) {
