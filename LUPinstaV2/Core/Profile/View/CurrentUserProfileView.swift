@@ -32,7 +32,7 @@ struct CurrentUserProfileView: View {
                         AuthService.shared.signout()
                          
                     }) {
-                        Image(systemName: "line.3.horizontal")
+                        Image(systemName: "figure.run")
                             .foregroundColor(.green)
                     }
                 }

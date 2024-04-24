@@ -16,12 +16,14 @@ struct TraineeTabView: View {
         //@State  var animateSearch = false
         
         TabView(selection: $selectedIndex){
-            FeedView()
+            
+            RecipeBaseView()
                 .onAppear{
                     selectedIndex = 0
                 }
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "fork.knife")
+                    Text("Recipes")
                 }.tag(0)
             
             SearchView()
@@ -31,21 +33,18 @@ struct TraineeTabView: View {
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")
-//                            .symbolEffect(.bounce.up.byLayer,
-//                                          value: animateSearch)
+                        Text("Finder")
                     }
-//                    .onTapGesture {
-//                        animateSearch.toggle()
-//                    }
                         
                 }.tag(1)
             
-            UploadPostView(tabIndex: $selectedIndex)
+            CurrentUserProfileView(user: user)
                 .onAppear{
                     selectedIndex = 2
                 }
                 .tabItem {
-                    Image(systemName: "plus.square")
+                    Image(systemName: "person")
+                    Text("Profile")
                 }.tag(2)
             
             //MainMessagesView(user: user)
@@ -55,27 +54,41 @@ struct TraineeTabView: View {
                 }
                 .tabItem {
                     Image(systemName: "graduationcap.fill")
+                    Text("Mentorship")
                 }.tag(3)
             
-            CurrentUserProfileView(user: user)
+            UploadPostView(tabIndex: $selectedIndex)
                 .onAppear{
                     selectedIndex = 4
                 }
                 .tabItem {
-                    Image(systemName: "person")
-                    Text("Profile")
+                    Image(systemName: "plus.square")
+                    Text("Upload Post")
                 }.tag(4)
             
-            Text("extra feature")
+            
+            FeedView()
                 .onAppear{
                     selectedIndex = 5
                 }
                 .tabItem {
-                    Image(systemName: "graduationcap.fill")
-                        
-                    Text("Extra feature")
+                    Image(systemName: "house")
+                    Text("Feed")
                 }.tag(5)
             
+            AlarmSetterView()
+                .onAppear{
+                    selectedIndex = 6
+                }
+                .tabItem {
+                    Image(systemName: "alarm.waves.left.and.right")
+                    Text("Progressive Alarm")
+                }
+                .tag(6)
+            
+         
+            
+           
 
         }
         .accentColor(.green)
