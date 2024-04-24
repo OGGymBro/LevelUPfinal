@@ -75,6 +75,8 @@
 		AFCBE7872BB13C4C00072EA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */; };
 		AFE8DA462BD901E500E934B0 /* RecipeBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE8DA452BD901E500E934B0 /* RecipeBaseView.swift */; };
 		AFE8DA482BD901F200E934B0 /* AlarmSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE8DA472BD901F200E934B0 /* AlarmSetterView.swift */; };
+		AFE8DA4A2BD943C400E934B0 /* AlarmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE8DA492BD943C400E934B0 /* AlarmData.swift */; };
+		AFE8DA4C2BD943EE00E934B0 /* SetAlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE8DA4B2BD943EE00E934B0 /* SetAlarmsView.swift */; };
 		AFF37B0F2BB143C200D679D5 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF37B0E2BB143C200D679D5 /* assets.xcassets */; };
 		AFF37B152BB153C900D679D5 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B142BB153C900D679D5 /* RegistrationViewModel.swift */; };
 		AFF37B172BB1903400D679D5 /* RoleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF37B162BB1903400D679D5 /* RoleChoice.swift */; };
@@ -148,6 +150,8 @@
 		AFCBE7862BB13C4C00072EA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFE8DA452BD901E500E934B0 /* RecipeBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBaseView.swift; sourceTree = "<group>"; };
 		AFE8DA472BD901F200E934B0 /* AlarmSetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSetterView.swift; sourceTree = "<group>"; };
+		AFE8DA492BD943C400E934B0 /* AlarmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmData.swift; sourceTree = "<group>"; };
+		AFE8DA4B2BD943EE00E934B0 /* SetAlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAlarmsView.swift; sourceTree = "<group>"; };
 		AFF37B0E2BB143C200D679D5 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		AFF37B142BB153C900D679D5 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AFF37B162BB1903400D679D5 /* RoleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleChoice.swift; sourceTree = "<group>"; };
@@ -557,6 +561,8 @@
 			isa = PBXGroup;
 			children = (
 				AFE8DA472BD901F200E934B0 /* AlarmSetterView.swift */,
+				AFE8DA4B2BD943EE00E934B0 /* SetAlarmsView.swift */,
+				AFE8DA492BD943C400E934B0 /* AlarmData.swift */,
 			);
 			path = ProgressiveAlarm;
 			sourceTree = "<group>";
@@ -742,6 +748,7 @@
 				AF6ACB0A2BB3D3C3002FBB00 /* ImageUploader.swift in Sources */,
 				AF8C6C882BB130B100C47306 /* UploadPostViewModel.swift in Sources */,
 				AF8C6C6B2BB12F3700C47306 /* CreateUsernameView.swift in Sources */,
+				AFE8DA4A2BD943C400E934B0 /* AlarmData.swift in Sources */,
 				AF8C6C722BB12F7F00C47306 /* UserStatView.swift in Sources */,
 				AFF37B192BB1A19D00D679D5 /* LoginViewModel.swift in Sources */,
 				AF69442A2BCD6990006A5B33 /* MainMessageViewModel.swift in Sources */,
@@ -751,6 +758,7 @@
 				AF8C6C8A2BB130CA00C47306 /* User.swift in Sources */,
 				AF8C6C862BB130A400C47306 /* UploadPostView.swift in Sources */,
 				AF6944432BCE62B9006A5B33 /* CreateNewCoachMessageViewModel.swift in Sources */,
+				AFE8DA4C2BD943EE00E934B0 /* SetAlarmsView.swift in Sources */,
 				AF8C6C8E2BB130F000C47306 /* ExerciseSession.swift in Sources */,
 				AF6944372BCD6B0C006A5B33 /* ChatLogViewModel.swift in Sources */,
 				AF8C6C802BB12FFB00C47306 /* ProfileHeaderView.swift in Sources */,
