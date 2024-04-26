@@ -7,7 +7,7 @@
 import Foundation
 
 struct Recipe: Codable, Hashable, Identifiable {
-    var id = UUID() // Add an id property of type UUID
+    var id :String // Add an id property of type UUID
     
     var ingredients: [String]
     let recipeName: String

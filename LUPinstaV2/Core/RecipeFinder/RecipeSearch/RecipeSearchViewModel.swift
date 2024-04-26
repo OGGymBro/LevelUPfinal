@@ -12,7 +12,7 @@ class RecipeSearchViewModel: ObservableObject {
     @Published var recipes: [Recipe] = [
         
         // Add more mock recipes as needed
-        Recipe(ingredients: ["chicken", "butter", "salt", "pepper"],
+        Recipe(id: "aaaa", ingredients: ["chicken", "butter", "salt", "pepper"],
                recipeName: "Chicken Tandoori",
                safeTags: ["diabetic","hypertension"],
                steps: ["prepare chicken tandoori", "cook chicken tandoori", "serve chicken tandoori"],
@@ -20,7 +20,7 @@ class RecipeSearchViewModel: ObservableObject {
                imageLink: "https://crockpot-app-prod.s3.ap-southeast-2.amazonaws.com/butter-chicken-1800x800_7b5d0f1593.jpeg",
                isVeg: true),
         
-        Recipe(ingredients: ["chicken", "butter", "salt", "pepper"],
+        Recipe(id: "aaaa", ingredients: ["chicken", "butter", "salt", "pepper"],
                recipeName: "Chicken Soup",
                safeTags: ["diabetic","hypertension"],
                steps: ["boil chicken soup", "serve chicken soup"],
@@ -28,7 +28,7 @@ class RecipeSearchViewModel: ObservableObject {
                imageLink: "https://crockpot-app-prod.s3.ap-southeast-2.amazonaws.com/butter-chicken-1800x800_7b5d0f1593.jpeg",
                isVeg: false),
         
-        Recipe(ingredients: ["chicken", "butter", "salt", "pepper"],
+        Recipe(id: "aaaaa", ingredients: ["chicken", "butter", "salt", "pepper"],
                recipeName: "Chicken Fries",
                safeTags: ["diabetic","hypertension"],
                steps: ["prepare chicken fries", "cook chicken fries", "serve chicken fries"],
