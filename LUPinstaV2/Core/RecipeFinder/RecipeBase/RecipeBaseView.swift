@@ -72,7 +72,7 @@ struct RecipeBaseView: View {
                     Text("Non-Vegetarian 🍗") // Section heading
                         .font(.title)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color.white)
+                        //.foregroundColor(Color.white)
                         .padding(.vertical, 5)
                         .padding(.horizontal, 10)
 //                        .background(LinearGradient(gradient: Gradient(colors: [Color.orange, Color.red]), startPoint: .leading, endPoint: .trailing))
@@ -100,7 +100,7 @@ struct RecipeBaseView: View {
                     Text("Vegetarian 🌱") // Section heading
                         .font(.title)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color.white)
+                        //.foregroundColor(Color.white)
                         .padding(.vertical, 5)
                         .padding(.horizontal, 10)
 //                        .background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.yellow]), startPoint: .leading, endPoint: .trailing))
